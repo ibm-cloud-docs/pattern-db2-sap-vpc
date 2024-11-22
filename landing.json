@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "title": "<Solution name>",
+  "title": "Deploying highly available DB2 for SAP on IBM VPC",
   "introduction": "This is a description of what the user will be able to find in the content for your solution.",
   "product_page": "https://ibm.com/cloud/solution-page",
   "deployment_url": "https://cloud.ibm.com/catalog/content/url/to/deploy",
