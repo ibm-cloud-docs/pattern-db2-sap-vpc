@@ -1,0 +1,87 @@
+#  Name your file `toc.yaml`
+#  Make sure you include all nav file coding requirements, as defined in https://test.cloud.ibm.com/docs-internal/writing?topic=writing-code-nav
+#  Anything with a fully qualified URL with `http` or `https` will get an external link icon added to the nav entry
+---
+toc:
+  properties:
+    subcollection: pattern-db2-sap-vpc
+    href: /docs/pattern-db2-sap-vpc
+    path: pattern-db2-sap-vpc
+    audience: solution
+    category: solution_docs
+    content-type: deployment
+   #industry: industry-value # Replace
+    use-case: VirtualPrivateCloud
+   #compliance: compliance-value # Replace
+    deployable: false # Set to true if this is a deployment guide that's associated with a deployable architecture in the catalog
+    description: 128 characters or less. The description should expand upon the name, but don't add extra marketese words that inflate the length. Focus on keywords that users would be skimming and/or searching for, including any key IBM branded terms covered in the solution. # Replace
+    label: Docs subcollection title # Replace
+  entries:
+  - navgroup:
+      id: overview
+      topics:
+      - topicgroup:
+          label: topic-group-label
+          topics:
+          - topic.md
+      - release-notes.md
+  - navgroup:
+      id: architecture
+      topics:
+      - reference-architecture.md
+  - navgroup:
+        id: plan
+        topics:
+        - topicgroup:
+            label: Design considerations
+            topics:
+            - topic: compute-design.md
+              navtitle: Compute
+            - topic: storage-design.md
+              navtitle: Storage
+            - topic: networking-design.md
+              navtitle: Networking
+            - topic: security-design.md
+              navtitle: Security
+            - topic: resiliency-design.md
+              navtitle: Resiliency
+            - topic: service-management-design.md
+              navtitle: Service management
+            # - other-design.md
+        - topicgroup:
+            label: Architecture decisions
+            topics:
+            - topic: compute-architecture.md
+              navtitle: Compute
+            - topic: storage-architecture.md
+              navtitle: Storage
+            - topic: networking-architecture.md
+              navtitle: Networking
+            - topic: security-architecture.md
+              navtitle: Security
+            - topic: resiliency-architecture.md
+              navtitle: Resiliency
+            - topic: service-management-architecture.md
+              navtitle: Service management
+            # - other-architecture.md
+  - navgroup:
+      id: deploy
+      topics:
+      - how-to.md
+  - navgroup:
+      id: tutorial
+      topics:
+      - tutorial.md
+  - navgroup:
+      id: reference
+      topics:
+      - responsibilities-da.md
+  - navgroup:
+      id: help
+      topics:
+      - get-help-da.md
+      - faqs.md
+      - topicgroup:
+          label: Troubleshooting
+          topics:
+          - troubleshoot.md
