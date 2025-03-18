@@ -1,11 +1,10 @@
 ---
 
-# The YAML header is required. For more information about the YAML header, see
-# https://test.cloud.ibm.com/docs-internal/writing?topic=writing-reference-architectures
-
 copyright:
   years: 2025
 lastupdated: "2025-03-18"
+
+keywords: SAP, Db2, Pacemaker, SUSE, SLES, High Availability, cluster
 
 subcollection: pattern-db2-sap-vpc 
 
@@ -17,39 +16,31 @@ authors:
 
 version: 1.0
 
-# Use if the reference architecture has deployable code.
-# Value is the URL to land the user in the IBM Cloud catalog details page for the deployable architecture.
-# See https://test.cloud.ibm.com/docs/get-coding?topic=get-coding-deploy-button
 deployment-url: url
 
-docs: https://cloud.ibm.com/docs/solution-guide
+# docs: https://cloud.ibm.com/docs/solution-guide
 
-image_source: https://github.com/terraform-ibm-modules/module/reference-architectures/xxx.svg
+# image_source: https://github.com/terraform-ibm-modules/module/reference-architectures/xxx.svg
 
-related_links:
-  - title: 'Highly Available SAP with Db2 on IBM Cloud VPC'
-    url: 'https://url.com'
-    description: 'Deploying highly available SAP and Db2 on IBM Cloud VPC using SUSE Linux.'
-  - title: 'Related or follow-on architectures'
-    url: 'https://cloud.ibm.com/docs/pattern-sap-on-vpc'
-    description: 'An IBM® solution design for the deployment of SAP on IBM Cloud® Virtual Private Cloud (VPC).'
+# related_links:
+#  - title: 'Highly Available SAP with Db2 on IBM Cloud VPC'
+#    url: 'https://url.com'
+#    description: 'Deploying highly available SAP and Db2 on IBM Cloud VPC using SUSE Linux.'
+#  - title: 'Related or follow-on architectures'
+#    url: 'https://cloud.ibm.com/docs/pattern-sap-on-vpc'
+#    description: 'An IBM® solution design for the deployment of SAP on IBM Cloud® Virtual Private Cloud (VPC).'
 
 use-case: Data resiliency, Enterprise resource planning
 industry: FinancialSector, Manufacturing, Retail, Industrials
 compliance: ISOIEC27001
 
-content-type: deployment
-
-# Set production to true to publish the reference architecture to IBM Cloud docs.
+content-type: reference-architecture
 
 production: false
 
 ---
 
-
 {{site.data.keyword.attribute-definition-list}}
-
-
 
 # Highly Available SAP with Db2 on IBM Cloud VPC
 {: #title-id}
