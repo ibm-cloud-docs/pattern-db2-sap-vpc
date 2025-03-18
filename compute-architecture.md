@@ -16,6 +16,7 @@ keywords:
 {: #compute-decisions}
 
 
+
 | Architecture decision| Requirement| Options |Decision| Rationale|
 |-|-|-|-|-|
 |Bare Metal Servers| text | text | text | text |

@@ -4,20 +4,17 @@
 # https://test.cloud.ibm.com/docs-internal/writing?topic=writing-reference-architectures
 
 copyright:
-  years: 2023
-lastupdated: "2024-11-22"
+  years: 2025
+lastupdated: "2025-03-18"
 
-keywords: # Not typically populated
-
-subcollection: pattern-db2-sap-vpc # Use deployable-reference-architectures, or the subcollection value from your toc.yaml file if docs-only.
+subcollection: pattern-db2-sap-vpc 
 
 authors:
-  - name: Sam P. User
-    url: https://linkedin.com/in/sam-p-user
-  - name: "name"
+  - name: John Easton
+    url: https://linkedin.com/in/johnpeaston
+  - name: "John Easton"
     url: "linkedIn profile URL"
 
-# The release that the reference architecture describes
 version: 1.0
 
 # Use if the reference architecture has deployable code.
@@ -37,23 +34,11 @@ related_links:
     url: 'https://url'
     description: 'Description'
 
-# use-case from 'code' column in
-# https://github.ibm.com/digital/taxonomy/blob/main/topics/topics_flat_list.csv
-use-case:
+use-case: Data resiliency, Enterprise resource planning
+industry: FinancialSector, Manufacturing, Retail, Industrials
+compliance: ISOIEC27001
 
-# industry from 'code' column in
-# https://github.ibm.com/digital/taxonomy/blob/main/industries/industries_flat_list.csv
-industry:
-
-# compliance from 'code' column in
-# https://github.ibm.com/digital/taxonomy/blob/main/compliance_entities/compliance_entities_flat_list.csv
-compliance:
-
-content-type: reference-architecture
-
-
-# For reference architectures in https://github.com/terraform-ibm-modules only.
-# All reference architectures stored in the /reference-architectures directory
+content-type: deployment
 
 # Set production to true to publish the reference architecture to IBM Cloud docs.
 
@@ -68,11 +53,11 @@ production: false
 
 # Title
 {: #title-id}
-{: toc-content-type="reference-architecture"}
-{: toc-industry="value"}
-{: toc-use-case="value"}
-{: toc-compliance="value"}
-{: toc-version="value"}
+{: toc-content-type="deployment"}
+{: toc-industry="FinancialSector, Manufacturing, Retail, Industrials"}
+{: toc-use-case="Data resiliency, Enterprise resource planning"}
+{: toc-compliance="ISOIEC27001"}
+{: toc-version="1.0"}
 
 
 
@@ -96,7 +81,7 @@ If you have a list or text to describe the diagram, include it here.
 
 Customize the design requirement heat map template image and highlight the scope of the architecture. Publishing in IBM Cloud Docs requires a caption to meet accessibility requirements.
 
-![Enter image alt text here.](heatmap.svg "Title text that shows on hover here"){: caption="Figure 2. A description that prints on the page" caption-side="bottom"}
+![Enter image alt text here.](images/ha-db2-sap-heat-map.drawio.svg "Title text that shows on hover here"){: caption="Figure 2. A description that prints on the page" caption-side="bottom"}
 
 For more information about creating a design requirements heat map image, see [Design requirements heat map](https://test.cloud.ibm.com/docs/architecture-framework?topic=architecture-framework-heat-map).
 

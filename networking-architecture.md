@@ -16,6 +16,7 @@ keywords:
 {: #networking-architecture}
 
 
+
 The following tables summarize the networking architecture decisions for the web app multi-zone resiliency pattern.
 
 ## Architecture decisions for enterprise connectivity
