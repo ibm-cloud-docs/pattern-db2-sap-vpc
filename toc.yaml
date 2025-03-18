@@ -66,11 +66,3 @@ toc:
       id: reference
       topics:
       - responsibilities-da.md
-  - navgroup:
-      id: help
-      topics:
-      - get-help-da.md
-      - topicgroup:
-          label: Troubleshooting
-          topics:
-          - troubleshoot.md
