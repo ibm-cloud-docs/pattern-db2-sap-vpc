@@ -5,15 +5,15 @@
 toc:
   properties:
     subcollection: pattern-db2-sap-vpc
-    href: /docs/pattern-db2-sap-vpc
-    path: pattern-db2-sap-vpc
+    href: /docs/pattern-db2-suse-vpc
+    path: pattern-db2-suse-vpc
     audience: solution
     category: solution_docs
     content-type: deployment
-   #industry: industry-value # Replace
+    industry: FinancialSector
     use-case: VirtualPrivateCloud
-   #compliance: compliance-value # Replace
-    deployable: false # Set to true if this is a deployment guide that's associated with a deployable architecture in the catalog
+    compliance: ISOIEC27001
+    deployable: false
     description: 128 characters or less. The description should expand upon the name, but don't add extra marketese words that inflate the length. Focus on keywords that users would be skimming and/or searching for, including any key IBM branded terms covered in the solution. # Replace
     label: Docs subcollection title # Replace
   entries:
