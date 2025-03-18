@@ -53,7 +53,7 @@ production: false
 
 # Title
 {: #title-id}
-{: toc-content-type="deployment"}
+{: toc-content-type="reference-architecture"}
 {: toc-industry="FinancialSector, Manufacturing, Retail, Industrials"}
 {: toc-use-case="Data resiliency, Enterprise resource planning"}
 {: toc-compliance="ISOIEC27001"}
