@@ -29,7 +29,7 @@ Following the Architecture Framework, the Highly Available SAP with Db2 on IBM C
 
 - Compute: Virtual and Bare Metal Servers
 - Storage: Primary Storage
-- Networking: xxxx, yyyy, zzzz
+- Networking: Hostname lookup, yyyy, zzzz
 - Resiliency: High Availability
 - Service Management: Monitoring, Logging, Auditing, Alerting
 

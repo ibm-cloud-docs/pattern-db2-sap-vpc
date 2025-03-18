@@ -51,7 +51,7 @@ production: false
 
 
 
-# Title
+# Highly Available SAP with Db2 on IBM Cloud VPC
 {: #title-id}
 {: toc-content-type="reference-architecture"}
 {: toc-industry="FinancialSector, Manufacturing, Retail, Industrials"}
