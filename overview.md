@@ -25,14 +25,14 @@ This document is intended to:
 
 
 
-Following the Architecture Framework, the `<Pattern Name>` covers design considerations and architecture decisions for the following aspects and domains:
+Following the Architecture Framework, the Highly Available SAP with Db2 on IBM Cloud VPC pattern covers design considerations and architecture decisions for the following aspects and domains:
 
 
 
-- Compute: Virtual Servers
-- Storage: Primary Storage, Backup Storage
-- Networking: Enterprise Connectivity, Segmentation and Isolation, Cloud Native Connectivity, Load Balancing, DNS
-- Resiliency: High Availability, Backup and Restore
+- Compute: Virtual and Bare Metal Servers
+- Storage: Primary Storage
+- Networking: xxxx, yyyy, zzzz
+- Resiliency: High Availability
 - Service Management: Monitoring, Logging, Auditing, Alerting
 
 The Architecture Framework provides a consistent approach to design cloud solutions by addressing requirements across a set of "aspects" and "domains", which are technology-agnostic architectural areas that need to be considered for any enterprise solution. For more details, see [Introduction to the Architecture Framework](/docs/architecture-framework).
