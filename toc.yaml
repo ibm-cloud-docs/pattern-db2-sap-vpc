@@ -20,11 +20,10 @@ toc:
   - navgroup:
       id: overview
       topics:
-      - overview.md
       - topicgroup:
-          label: topic-group-label
+          label: Overview
           topics:
-          - topic.md
+          - overview.md
   - navgroup:
       id: architecture
       topics:
