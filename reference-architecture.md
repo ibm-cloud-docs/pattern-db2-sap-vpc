@@ -72,7 +72,7 @@ After the introduction, include a summary of the typical use case for the archit
 
 Include the architecture diagram SVG file that was created by using drawio and the IBM2 library.
 
-![Enter image alt text here.](example-architecture-diagram.svg "Title text that shows on hover here"){: caption="Figure 1. A description that prints on the page" caption-side="bottom"}
+![Enter image alt text here.](images/ha-db2-sap-architecture.drawio.svg "Title text that shows on hover here"){: caption="Figure 1. A description that prints on the page" caption-side="bottom"}
 
 If you have a list or text to describe the diagram, include it here.
 
