@@ -5,17 +5,17 @@
 toc:
   properties:
     subcollection: pattern-db2-sap-vpc
-    href: /docs/pattern-db2-suse-vpc
-    path: pattern-db2-suse-vpc
+    href: /docs/pattern-db2-sap-vpc
+    path: pattern-db2-sap-vpc
     audience: solution
     category: solution_docs
     content-type: deployment
-    industry: FinancialSector
-    use-case: VirtualPrivateCloud
+    industry: FinancialSector, Manufacturing, Retail, Industrials
+    use-case: Data resiliency, Enterprise resource planning
     compliance: ISOIEC27001
     deployable: false
-    description: 128 characters or less. The description should expand upon the name, but don't add extra marketese words that inflate the length. Focus on keywords that users would be skimming and/or searching for, including any key IBM branded terms covered in the solution. # Replace
-    label: Docs subcollection title # Replace
+    description: Deploying highly available SAP and Db2 on IBM Cloud VPC using SUSE Linux
+    label: Highly Available SAP with Db2 on IBM Cloud VPC
   entries:
   - navgroup:
       id: overview
@@ -41,13 +41,10 @@ toc:
               navtitle: Storage
             - topic: networking-design.md
               navtitle: Networking
-            - topic: security-design.md
-              navtitle: Security
             - topic: resiliency-design.md
               navtitle: Resiliency
             - topic: service-management-design.md
               navtitle: Service management
-            # - other-design.md
         - topicgroup:
             label: Architecture decisions
             topics:
@@ -57,21 +54,14 @@ toc:
               navtitle: Storage
             - topic: networking-architecture.md
               navtitle: Networking
-            - topic: security-architecture.md
-              navtitle: Security
             - topic: resiliency-architecture.md
               navtitle: Resiliency
             - topic: service-management-architecture.md
               navtitle: Service management
-            # - other-architecture.md
   - navgroup:
       id: deploy
       topics:
       - how-to.md
-  - navgroup:
-      id: tutorial
-      topics:
-      - tutorial.md
   - navgroup:
       id: reference
       topics:
@@ -80,7 +70,6 @@ toc:
       id: help
       topics:
       - get-help-da.md
-      - faqs.md
       - topicgroup:
           label: Troubleshooting
           topics:
