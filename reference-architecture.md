@@ -27,12 +27,12 @@ docs: https://cloud.ibm.com/docs/solution-guide
 image_source: https://github.com/terraform-ibm-modules/module/reference-architectures/xxx.svg
 
 related_links:
-  - title: 'Title'
+  - title: 'Highly Available SAP with Db2 on IBM Cloud VPC'
     url: 'https://url.com'
-    description: 'Description.'
-  - title: 'related or follow-on architectures'
-    url: 'https://url'
-    description: 'Description'
+    description: 'Deploying highly available SAP and Db2 on IBM Cloud VPC using SUSE Linux.'
+  - title: 'Related or follow-on architectures'
+    url: 'https://cloud.ibm.com/docs/pattern-sap-on-vpc'
+    description: 'An IBM® solution design for the deployment of SAP on IBM Cloud® Virtual Private Cloud (VPC).'
 
 use-case: Data resiliency, Enterprise resource planning
 industry: FinancialSector, Manufacturing, Retail, Industrials
