@@ -57,7 +57,7 @@ toc:
   - navgroup:
       id: deploy
       topics:
-      - how-to.md
+      - deploy.md
   - navgroup:
       id: reference
       topics:
