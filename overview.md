@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-03-18"
+lastupdated: "2025-03-19"
 
 subcollection: pattern-db2-sap-vpc 
 
@@ -10,7 +10,6 @@ keywords:
 {{site.data.keyword.attribute-definition-list}}
 
 # Overview
-
 {: #overview}
 
 The Highly Available SAP with Db2 on IBM Cloud VPC deployment guide provides an IBM® solution design for the deployment of a highly available Db2 database on IBM Cloud® Virtual Private Cloud (VPC) using SUSE Linux. This solution uses Pacemaker - an open source high-availability cluster resource manager - to deliver high availabilty to the Db2 database.
