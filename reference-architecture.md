@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-03-18"
+lastupdated: "2025-03-19"
 
 keywords: SAP, Db2, Pacemaker, SUSE, SLES, High Availability, cluster
 
@@ -33,7 +33,6 @@ deployment-url: url
 use-case: Data resiliency, Enterprise resource planning
 industry: FinancialSector, Manufacturing, Retail, Industrials
 compliance: ISOIEC27001
-
 content-type: reference-architecture
 
 production: false
@@ -43,9 +42,8 @@ production: false
 {{site.data.keyword.attribute-definition-list}}
 
 # Highly Available SAP with Db2 on IBM Cloud VPC
-{: #title-id}
-
-
+{: #pattern-db2-sap-vpc}
+{: toc-content-type="reference-architecture"}
 {: toc-industry="FinancialSector, Manufacturing, Retail, Industrials"}
 {: toc-use-case="Data resiliency, Enterprise resource planning"}
 {: toc-compliance="ISOIEC27001"}
