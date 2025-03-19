@@ -1,30 +1,30 @@
 {
   "version": 2,
   "title": "Deploying highly available DB2 for SAP on IBM VPC",
-  "introduction": "This is a description of what the user will be able to find in the content for your solution.",
+  "introduction": "This deployment guide provides resources to help deploying a highly available SAP system using Db2 as an underlying database in an IBM Cloud Virtual Private Cloud (VPC) environment.",
   "product_page": "https://ibm.com/cloud/solution-page",
   "deployment_url": "https://cloud.ibm.com/catalog/content/url/to/deploy",
   "section_topics": {
     "links": [
       {
-        "title": "Topic title",
+        "title": "Overview",
+        "href": "/docs/pattern-db2-sap-vpc?topic=pattern-db2-sap-vpc-overview"
+      },
+      {
+        "title": "Reference Architecture",
+        "href": "/docs/pattern-db2-sap-vpc?topic=pattern-db2-sap-vpc-pattern-db2-sap-vpc"
+      },
+      {
+        "title": "Planning",
         "href": "/docs/overview?topic=overview-get-started-checklist"
       },
       {
-        "title": "Topic title",
+        "title": "Deploying",
         "href": "/docs/overview?topic=overview-get-started-checklist"
       },
       {
-        "title": "Topic title",
-        "href": "/docs/overview?topic=overview-get-started-checklist"
-      },
-      {
-        "title": "Topic title",
-        "href": "/docs/overview?topic=overview-get-started-checklist"
-      },
-      {
-        "title": "Topic title",
-        "href": "/docs/overview?topic=overview-get-started-checklist"
+        "title": "Reference materials",
+        "href": "/docs/pattern-db2-sap-vpc?topic=pattern-db2-sap-vpc-references"
       }
     ]
   },
