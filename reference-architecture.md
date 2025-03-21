@@ -2,9 +2,9 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-03-19"
+lastupdated: "2025-03-21"
 
-keywords: SAP, Db2, Pacemaker, SUSE, SLES, High Availability, cluster
+keywords: SAP, Db2, Pacemaker, SUSE, SLES, SUSE Linux, High Availability, cluster
 
 subcollection: pattern-db2-sap-vpc 
 
