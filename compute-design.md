@@ -23,15 +23,15 @@ The pattern requires a pair of servers to support the Db2 database and a pair of
 
 * Virtual Server Instances (VSIs)
 
-  * [About virtual server instances for VPC](/docs/vpc?topic=vpc-about-advanced-virtual-servers).
+    * [About virtual server instances for VPC](/docs/vpc?topic=vpc-about-advanced-virtual-servers).
 
-  * [IBM Cloud Intel Virtual Servers on VPC Infrastructure](/docs/sap?topic=sap-fast-path-site-map-intel-vs-gen2).
+    * [IBM Cloud Intel Virtual Servers on VPC Infrastructure](/docs/sap?topic=sap-fast-path-site-map-intel-vs-gen2).
 
 * Bare Metal Servers
 
-  * [About Bare Metal Servers for VPC](/docs/vpc?topic=vpc-about-bare-metal-servers).
+    * [About Bare Metal Servers for VPC](/docs/vpc?topic=vpc-about-bare-metal-servers).
 
-  * [IBM Cloud Intel Bare Metal Servers on VPC Infrastructure](docs/sap?topic=sap-fast-path-site-map-intel-bm-vpc).
+    * [IBM Cloud Intel Bare Metal Servers on VPC Infrastructure](docs/sap?topic=sap-fast-path-site-map-intel-bm-vpc).
 
 The database servers that will run IBM Db2 need to be sized appropriately to support the workload requirements. Information on this can be found here:
 
