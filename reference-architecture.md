@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-03-21"
+lastupdated: "2025-03-24"
 
 keywords: SAP, Db2, Pacemaker, SUSE, SLES, SUSE Linux, High Availability, cluster
 
@@ -120,11 +120,3 @@ Update the following table below with components that are unique to this archite
 {: #compliance}
 
 _Optional section._ Feedback from users implies that architects want only the high-level compliance items and links off to control details that team members can review. Include the list of control profiles or compliance audits that this architecture meets. For controls, provide "learn more" links to the control library that is published in the IBM Cloud Docs. For audits, provide information about the compliance item.
-
-## Next steps
-{: #next-steps}
-
-_Optional section._ Include links to your deployment guide or next steps to get started with the architecture.
-
-
-:exclamation: **Important:** Rename this file `<architecture-name>.md`. For deployable architectures, `<architecture-name>` is the same as the deployable architecture name.
