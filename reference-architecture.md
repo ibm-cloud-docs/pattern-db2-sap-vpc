@@ -69,11 +69,13 @@ If you have a list or text to describe the diagram, include it here.
 ## Design concepts
 {: #design-concepts}
 
-Customize the design requirement heat map template image and highlight the scope of the architecture. Publishing in IBM Cloud Docs requires a caption to meet accessibility requirements.
+The following diagram shows the infrastructure and software stack for the solution:
 
-![Enter image alt text here.](images/ha-db2-sap-heat-map.drawio.svg "Title text that shows on hover here"){: caption="Figure 2. A description that prints on the page" caption-side="bottom"}
+![Highly Available SAP with Db2 on IBM Cloud VPC stack diagram.](images/sap+db2-stack.drawio.svg "Highly Available SAP with Db2 on IBM Cloud VPC stack diagram"){: caption="Highly Available SAP with Db2 on IBM Cloud VPC stack diagram" caption-side="bottom"}
 
-For more information about creating a design requirements heat map image, see [Design requirements heat map](https://test.cloud.ibm.com/docs/architecture-framework?topic=architecture-framework-heat-map).
+
+
+
 
 
 ## Requirements

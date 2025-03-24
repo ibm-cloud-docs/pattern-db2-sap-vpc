@@ -15,7 +15,7 @@ keywords: resilience, high avalability, disaster recovery, Pacemaker, cluster, p
 # Resiliency design
 {: #resiliency-design}
 
-The Highly Available SAP with {{site.data.keyword.IBM&reg}} Db2 on {{site.data.keyword.Bluemix}} VPC pattern delivers increased resilience over single server deployments of either IBM Db2 or SAP. The VSIs or Bare Metal servers are clustered together to avoid the host being a single point of failure. This pattern delivers a solution with the following properties:
+The Highly Available SAP with {{site.data.keyword.IBM_notm}} Db2 on {{site.data.keyword.Bluemix}} VPC pattern delivers increased resilience over single server deployments of either IBM Db2 or SAP. The VSIs or Bare Metal servers are clustered together to avoid the host being a single point of failure. This pattern delivers a solution with the following properties:
 
 * For {{site.data.keyword.IBM_notm}} Db2
 
