@@ -23,7 +23,7 @@ The Highly Available SAP with {{site.data.keyword.IBM&reg}} Db2 on {{site.data.k
 
     * Separate disk storage attached to each of the VSIs that contains the DB2 database.  Note that Db2 does not operate with shared storage.
 
-    Databases are key repositories of business information requiring them to be both performant and highly available.  The Db2 databases are made highly available using Db2 High Availability and Disaster Recovery (HADR).  This is a data replication feature.  With HADR there two separate Db2 database servers: a primary and a standby with all clients connected to the primary server. Database transactions are written to log files and these log files are transferred to the second (standby) database server over the network. The standby server updates the local database using the transferred log files to be kept synchronised with the primary server.  In the event of a failure of the primary database server, the standby database server takes over the workload.  
+        Databases are key repositories of business information requiring them to be both performant and highly available.  The Db2 databases are made highly available using Db2 High Availability and Disaster Recovery (HADR).  This is a data replication feature.  With HADR there two separate Db2 database servers: a primary and a standby with all clients connected to the primary server. Database transactions are written to log files and these log files are transferred to the second (standby) database server over the network. The standby server updates the local database using the transferred log files to be kept synchronised with the primary server.  In the event of a failure of the primary database server, the standby database server takes over the workload.  
 
     * A floating, virtual IP address that allows clients to connect to the Db2 database service no matter which cluster node it is running on.
 
@@ -36,6 +36,8 @@ The Highly Available SAP with {{site.data.keyword.IBM&reg}} Db2 on {{site.data.k
     * Two SAP cluster nodes connected to one another by the IBM Cloud network.  These nodes are Virtual System Instances (VSIs) running within a Virtual Private Cloud (VPC).
 
     * {{site.data.keyword.IBM_notm}} VPC File Storage attached to each of the VSIs that run the SAP components.  This shared filesystem is mounted using the NFS protocol to facilitate sharing of data between the SAP components.
+
+        The two SAP servers communicate via an Enqueue Server. The Enqueue Server on the primary nodes transmits replication data to the Enqueue Replication Server on the standby system. This stores the data in a shadow enqueue table residing in shared memory. In case the primary Enqueue Server fails, the shadow enqueue table on the Enqueue Replication Server is used to rebuild the tables and data structures for the recovered Enqueue Server that is started on the same node. The Enqueue Replication Server stops after transferring the data to the recovered Enqueue Server.
 
     * A floating, virtual IP address that allows clients to connect to the SAP service(s) no matter which cluster node it is running on.
 
