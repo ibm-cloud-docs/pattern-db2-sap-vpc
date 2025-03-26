@@ -30,12 +30,6 @@
   },
   "section_highlights": [
     {
-      "title": "Resource title",
-      "description": "Short description of resource content.",
-      "href": "https://www.example.ibm.com/link/to/resource",
-      "type": "blog"
-    },
-    {
       "title": "Db2 Optimization Techniques for SAP Database Migration to the Cloud",
       "description": "This IBM Redbook provides in-depth recommendations for the source system database export.",
       "href": "https://www.redbooks.ibm.com/abstracts/sg248531.html",
@@ -45,24 +39,19 @@
   ],
   "section_architectures": [
     {
-      "title": "Acme Test on VPC",
-      "href": "/docs/acme-test?topic=acme-test-reference-architecture",
-      "deployable": true
+      "title": "Overview of IBM Cloud for SAP",
+      "href": "//docs/sap?topic=sap-overview-sap-offerings-overview",
+      "deployable": false
     },
     {
-      "title": "Acme Test on Power Virtual Servers",
-      "href": "/docs/acme-test?topic=acme-test-reference-architecture",
-      "deployable": true
+      "title": "SAP NetWeaver 7.x on UNIX with Db2 on IBM Cloud VPC",
+      "href": "/docs/sap?topic=sap-sap-refarch-nw-db2",
+      "deployable": false
     },
     {
-      "title": "Acme Test on Power Virtual Servers",
-      "href": "/docs/acme-test?topic=acme-test-reference-architecture",
-      "deployable": true
-    },
-    {
-      "title": "Acme Test on Power Virtual Servers",
-      "href": "/docs/acme-test?topic=acme-test-reference-architecture",
-      "deployable": true
+      "title": "SAP NetWeaver 7.x with SAP HANA IBM Cloud VPC",
+      "href": "/docs/sap?topic=sap-sap-refarch-nw-hana",
+      "deployable": false
     }
   ]
 }
