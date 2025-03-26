@@ -59,20 +59,20 @@
   "tiles": [
     {
       "date": "07 August 2024",
-      "title": "Experimental: Access resources from the Resources tab",
+      "title": "Experimental: Access resources from the Resources tab"
     },
     {
       "date": "07 August 2024",
-      "title": "View counts for all resources in the resource summary widget",
+      "title": "View counts for all resources in the resource summary widget"
     },
     {
       "date": "17 June 2024",
-      "title": "Experimental: Using AI to answer your questions about IBM Cloud",
+      "title": "Experimental: Using AI to answer your questions about IBM Cloud"
     },
     {
       "date": "17 June 2024",
-      "title": "Changes to IBM Cloud projects API method to list all deployed resources",
+      "title": "Changes to IBM Cloud projects API method to list all deployed resources"
     }
   ]
-}
+  }
 }
