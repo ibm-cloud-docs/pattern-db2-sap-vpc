@@ -97,24 +97,29 @@ Review the design considerations and architecture decisions for the following as
 ![Architecture Design Scope](images/ha-db2-sap-heat-map.drawio.svg "Architecture Design Scope"){: caption="Architecture Design Scope" caption-side="bottom"}
 
 ### Design choices
+{: #design-choices}
 
 #### Cluster management software
+{: #cluster-mgmt-sw}
 
 There are a number of different solutions available that provide cluster management, both open source and proprietary. This pattern uses the open source Pacemaker software to manage the cluster resources and control and orchestrate the failover and failback of resources when the cluster configuration changes as cluster nodes leave and rejoin the cluster.
 
 Other solutions from the open source community or from other commercial organizations are also available. Refer to the websites of the open source projects or the documentation provided by commercial organizations for further information on how these could be used within this architecture.
 
-#### Storage options
+#### Storage options
+{: #storage-options}
 
 The pattern uses two key storage options. IBM Cloud provides VPC File Storage.  This can be used to provide a shared filesystem that is accessed by the SAP Application Server nodes within the Pacemaker cluster. 
 
 IBM Db2 does not support shared disk access. Block storage for the database instances (both primary and secondary) is delivered through VPC Block Storage if VSIs are used as database servers. If the decision is made to use VPC Bare Metal servers, this storage can be provided by solid state drives within the physical server.  This offers faster performance than VPC Block Storage that is accessed via the network.
 
-Application Server nodes
+#### Application Server nodes
+{: #appsvr-nodes}
 
 Two options are available for Application Server nodes, Virtual Servers (VSIs) or Bare Metal servers. There are many different VSI profiles that can be chosen to best meet the compute and memory requirements of the application(s) being run within the environment but these need to be supported by SAP. 
 
-Database Server nodes
+#### Database Server nodes
+{: #dbsvr-nodes}
 
 Two options are available for Database Server nodes, Virtual Servers (VSIs) or Bare Metal servers. There are many different VSI profiles that can be chosen to best meet the compute and memory requirements of the database.
 
