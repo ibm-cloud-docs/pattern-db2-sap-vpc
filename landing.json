@@ -40,7 +40,7 @@
   "section_architectures": [
     {
       "title": "Overview of IBM Cloud for SAP",
-      "href": "//docs/sap?topic=sap-overview-sap-offerings-overview",
+      "href": "/docs/sap?topic=sap-overview-sap-offerings-overview",
       "deployable": false
     },
     {
