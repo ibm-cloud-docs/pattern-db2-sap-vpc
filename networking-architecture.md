@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-03-21"
+lastupdated: "2025-03-26"
 
 subcollection: pattern-db2-sap-vpc
 
@@ -95,3 +95,20 @@ The following are domain name system (DNS) architecture decisions for this desig
 | Public DNS | Provide DNS resolution to support the use of hostnames instead of IP addresses for applications | text | text | text |
 | Private DNS | Provide DNS resolution within IBM Cloud's private network | text| text | text |
 {: caption="Table 7. Architecture decisions for domain name system" caption-side="bottom"}
+
+
+Resilient communication between enterprise networks and the SAP / Db2 servers can xxxxxx
+On-prem to IBM Cloud traffic comes via an IPSec tunnel. xxxxx
+
+
+* Configure GRE tunnels between the Transit Gateway (TGW) and the firewalls, with one tunnel connecting to Firewall1 and the other to Firewall2.
+
+* Set up eBGP on the Palo Alto firewall to advertise the on-premises CIDR to the TGW.
+
+* Configure route prepending on the second GRE tunnel to ensure traffic consistently uses the primary tunnel.
+
+* Enable BFD on both firewalls, including those on IBM and the on-premises side.
+
+* If the IPSec tunnel between the on-premises network and IBM goes down, route advertisements will automatically be removed from the primary GRE tunnel, and traffic will seamlessly switch to the secondary tunnel.
+
+* This configuration eliminates dependency on VPC routes, avoiding the need for manual route updates.
