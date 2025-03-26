@@ -2,7 +2,6 @@
   "version": 2,
   "title": "Deploying a highly available SAP environment using IBM Db2 on IBM VPC",
   "introduction": "This deployment guide provides resources to help deploying a highly available SAP system using Db2 as an underlying database in an IBM Cloud Virtual Private Cloud (VPC) environment.",
-  "product_page": "https://ibm.com/cloud/solution-page",
   "section_topics": {
     "links": [
       {
@@ -18,8 +17,8 @@
         "href": "/docs/pattern-db2-sap-vpc?topic=pattern-db2-sap-vpc-compute-design"
       },
       {
-        "title": "Title",
-        "href": "/docs/overview?topic=overview-get-started-checklist"
+        "title": "Deploying",
+        "href": "/docs/pattern-db2-sap-vpc?topic=pattern-db2-sap-vpc-deploy"
       },
       {
         "title": "Reference materials",
