@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-03-21"
+lastupdated: "2025-03-27"
 
 subcollection: pattern-db2-sap-vpc
 
@@ -15,12 +15,6 @@ keywords:
 # Architecture decisions for storage
 {: #storage-decisions}
 
+The following link will take you to the storage architectural decisions for SAP running on IBM Cloud VPC:
 
-
-| Architecture decision| Requirement| Option | Decision| Rationale|
-|-|-|-|-|-|
-|Primary Storage| text | text | text | text |
-|Backup Storage| text | text | text | text |
-|Archive Storage| text | text | text | text |
-|Data Migration| text | text | text | text |
-{: caption="Table 1. Architecture decisions for storage" caption-side="bottom"}
+[Architecture decisions for storage](/docs/pattern-sap-on-vpc?topic=pattern-sap-on-vpc-storage-decisions)

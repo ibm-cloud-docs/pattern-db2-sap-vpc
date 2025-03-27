@@ -15,4 +15,6 @@ keywords:
 # Architecture decisions for compute
 {: #compute-decisions}
 
-[Architecture decisions for compute](/docs/pattern-sap-on-vpc?topic=pattern-sap-on-vpc-compute-decisions).
+The following link will take you to the compute architectural decisions for SAP running on IBM Cloud VPC:
+
+[Architecture decisions for compute](/docs/pattern-sap-on-vpc?topic=pattern-sap-on-vpc-compute-decisions)
