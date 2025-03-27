@@ -15,4 +15,4 @@ keywords:
 
 The following link will take you to the service management architectural decisions for SAP running on IBM Cloud VPC:
 
-[Architecture decisions for compute](/docs/pattern-sap-on-vpc?topic=pattern-sap-on-vpc-service)
+[Architecture decisions for service management](/docs/pattern-sap-on-vpc?topic=pattern-sap-on-vpc-service)
