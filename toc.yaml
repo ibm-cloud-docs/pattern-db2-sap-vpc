@@ -44,7 +44,7 @@ toc:
         - topicgroup:
             label: Architecture decisions
             topics:
-            - topic: /docs/pattern-sap-on-vpc?topic=pattern-sap-on-vpc-compute-decisions
+            - topic: compute-architecture.md
               navtitle: Compute
             - topic: storage-architecture.md
               navtitle: Storage
