@@ -20,7 +20,9 @@ The following link will take you to the networking architectural decisions for S
 [Architecture decisions for networking](/docs/pattern-sap-on-vpc?topic=pattern-sap-on-vpc-network-decisions)
 
 
-## Resilient communication between enterprise networks and the SAP / Db2 servers can xxxxxx
+## Resilient communication between enterprise networks and IBM Cloud servers
+{: #resilient-comms-to-cloud}
+
 On-prem to IBM Cloud traffic comes via an IPSec tunnel. xxxxx
 
 
