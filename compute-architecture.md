@@ -15,13 +15,4 @@ keywords:
 # Architecture decisions for compute
 {: #compute-decisions}
 
-
-
-| Architecture decision| Requirement| Options |Decision| Rationale|
-|-|-|-|-|-|
-|Bare Metal Servers| text | text | text | text |
-|Virtual Servers| text | text | text | text |
-|Virtualization| text | text | text | text |
-|Containers| text | text | text | text |
-|Serverless| text | text | text | text |
-{: caption="Table 1. Architecture decisions for compute" caption-side="bottom"}
+[Architecture decisions for compute](/docs/pattern-sap-on-vpc?topic=pattern-sap-on-vpc-compute-decisions).
