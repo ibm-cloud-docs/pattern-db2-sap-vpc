@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-03-26"
+lastupdated: "2025-03-28"
 
 keywords: SAP, Db2, Pacemaker, SUSE, SLES, SUSE Linux, High Availability, cluster
 
@@ -51,7 +51,7 @@ production: false
 
 Many organisations run SAP applications using an IBM Db2 database to support the SAP instance. This pattern describes a highly available implementation of both SAP and Db2 to deliver a resilient solution to meet an organisation's business needs.
 
-SAP systems are often mission-critical for the organisations that use them. Simply providing a highly-available SAP Application Server will offer little benefit unless the underlying database - IBM Db2 in this case - is also made highly available. The architecture for this pattern provides a highly available database layer which underpings a highly available application server layer running within {{site.data.keyword.Bluemix}} Virtual Private Cloud.
+SAP systems are often mission-critical for the organisations that use them. Simply providing a highly-available SAP Application Server will offer minimal benefit unless the underlying database - IBM Db2 in this case - is also made highly available. The architecture for this pattern provides a highly available database layer which underpings a highly available application server layer running within {{site.data.keyword.Bluemix}} Virtual Private Cloud.
 
 ## Architecture diagram
 {: #architecture-diagram}
@@ -64,7 +64,7 @@ Users will access the {{site.data.keyword.Bluemix}} environment either via a Vir
 
 Administrative access to the environment is recommended to go via a Bastion Host. This provides a secure access point for systems management activities. Bastion hosts can also provide session logging for audit purposes, allowing all management activities to be securely logged. In the event of an incident or problem arising, there is a record of what actions were performed that gave rise to this.
 
-As was briefly described above, the underlying IBM Db2 database is made highly available by using multiple database server nodes. In the event of a failure of the primary database server, there is a secondary (backup) server available to take over the primary's workload. The cluster of nodes is managed by open source cluster management software (Pacemaker). This monitors the health of the environment and responds to incidents by managing the failover of the database from one node to another.
+As was briefly described, the underlying IBM Db2 database is made highly available by using multiple database server nodes. In the event of a failure of the primary database server, there is a secondary (backup) server available to take over the primary's workload. The cluster of nodes is managed by open source cluster management software (Pacemaker). This monitors the health of the environment and responds to incidents by managing the failover of the database from one node to another.
 
 The SAP Application server instances run in a separate Pacemaker-managed cluster. As with the database cluster, Pacemaker manages the failover of the SAP components from one node to another following a failure.
 
@@ -126,7 +126,7 @@ Two options are available for Database Server nodes, Virtual Servers (VSIs) or B
 ## Requirements
 {: #requirements}
 
-Update the following table with requirements for this architecture. Introduce the table with a sentence. For example, "The following table outlines the requirements that are addressed in this architecture."
+The following table outlines the requirements that are addressed in this architecture.
 
 | Aspect | Requirements |
 | -------------- | -------------- |

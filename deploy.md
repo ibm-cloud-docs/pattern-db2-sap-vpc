@@ -59,7 +59,7 @@ After the infrastructure has been deployed, the next step installs the software 
 1. Installing the Pacemaker software in the IBM Db2 cluster
 
 ### Installing the IBM Db2 software
-{: #deploy-sap-pm}
+{: #deploy-db2-pm}
 
 IBM Cloud provides a fully managed Db2 service via the IBM Cloud catalog (https://cloud.ibm.com/catalog/services/db2). This pattern **does not** use this cloud service and requires Db2 to be manually installed. {: important}
 
@@ -68,14 +68,14 @@ The following link describes the installation of the IBM Db2 software:
 * [Installing Db2 Database Servers](https://www.ibm.com/docs/en/db2/12.1?topic=installing-db2-database-servers)
 
 ### Download and install SAP software and applications
-{: #deploy-sap-pm}
+{: #deploy-sap-sw}
 
 SAP software installation media must be obtained from SAP directly, and requires valid license agreements with SAP in order to access these files. The following link describes this process:
 
 * [Download and install SAP software and applications](/docs/sap?topic=sap-download-install-media)
 
 ### Installing the Pacemaker software in the SAP cluster
-{: #deploy-sap-pm}
+{: #deploy-sap-pm-install}
 
 SAP uses the Pacemaker software provided by the Linux distribution that you are using. Follow the appropriate steps for the Linux distribution being used
 
@@ -83,7 +83,7 @@ SAP uses the Pacemaker software provided by the Linux distribution that you are 
 * [Installing Pacemaker on SUSE Linux Enterprise Server](https://documentation.suse.com/sle-ha/12-SP5/html/SLE-HA-all/art-ha-install-quick.html)
 
 ### Installing the Pacemaker software in the IBM Db2 cluster
-{: #deploy-sap-pm}
+{: #deploy-db2-pm-install}
 
 IBM Db2 provides its own Pacemaker cluster software package that is intended for use with Db2. This should be used instead of the Pacemaker software provided by the Linux distribution. The following link describes the installation of the IBM Db2 Pacemaker software:
 

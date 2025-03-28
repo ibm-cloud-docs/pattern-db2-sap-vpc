@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-03-24"
+lastupdated: "2025-03-28"
 
 subcollection: pattern-db2-sap-vpc
 
@@ -25,9 +25,9 @@ It is recommended that the Boot Volume of the VSI is NOT used to provide block s
 
 All Block storage is selected based on capacity (GB) and performance (IOPS) measurements and is required to meet a specific SAP Workload.
 
-IOPS values are measured based on 16 KB block size with a 50-50 read/write mix. To achieve a maximum I/O throughput, it's advisable to look at the tier and custom profiles available for storage and find the optimal combination of size and IOPS.
+IOPS values are measured based on 16 KB blocksize with a 50-50 read/write mix. To achieve a maximum I/O throughput, it's advisable to look at the tier and custom profiles available for storage and find the optimal combination of blocksize and IOPS.
 
-Storage volumes differ in performance, depending on their IOPS tier. You can select among 3, 5, and 10 IOPS/GB (see [Tiered IOPS profiles](docs/vpc?topic=vpc-block-storage-profiles&interface=ui#tiers)). You can also select a [custom size](/docs/vpc?topic=vpc-block-storage-profiles&interface=ui#custom) (in GB and IOPS) that is based on the size of the storage.
+Storage volumes differ in performance, depending on their IOPS tier. You can select among 3, 5, and 10 IOPS/GB (see [Tiered IOPS profiles](docs/vpc?topic=vpc-block-storage-profiles&interface=ui#tiers)). You can also select a [custom value](/docs/vpc?topic=vpc-block-storage-profiles&interface=ui#custom) (in GB and IOPS) that is based on the blocksize of the storage.
 
 If you need more than the initially provisioned storage in your server, you can attach extra volumes to a it later. Contact [IBM Cloud Support](/docs/account?topic=account-using-avatar#getting-support) for extension options if the attached storage is insufficient for your workload.
 
