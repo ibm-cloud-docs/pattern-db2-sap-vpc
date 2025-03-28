@@ -58,7 +58,7 @@ SAP systems are often mission-critical for the organisations that use them. Simp
 
 The following diagram shows the reference architecture for this pattern:
 
-![architecture diagram for the Highly Available SAP with Db2 on IBM Cloud VPC pattern](/images/sap-db2-vpc-detailedHLA.drawio.svg "architecture diagram for the Highly Available SAP with Db2 on IBM Cloud VPC pattern"){: caption="architecture diagram for the Highly Available SAP with Db2 on IBM Cloud VPC pattern" caption-side="bottom"}
+![Architecture diagram for the Highly Available SAP with Db2 on IBM Cloud VPC pattern](/images/sap-db2-vpc-detailedHLA.drawio.svg "Architecture diagram for the Highly Available SAP with Db2 on IBM Cloud VPC pattern"){: caption="Architecture diagram for the Highly Available SAP with Db2 on IBM Cloud VPC pattern" caption-side="bottom"}
 
 Users will access the {{site.data.keyword.Bluemix}} environment either via a Virtual Private Network (VP) across the Internet, or via a private Direct Link connection.
 

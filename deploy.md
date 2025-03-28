@@ -107,10 +107,15 @@ For more details on these steps, see:
 
 This is content under a third-level subheading.
 
-## Configure Db2
+## Configure Db2 Pacemaker
 {: #deploy-db2-config}
 
-The first step is to deploy the infrastructure - Virtual System Instances (VSIs) or Bare Metal servers - that will be used to support the IBM Db2 and SAP Pacemaker clusters.
+The IBM Db2 Pacemaker configuration requires two steps:
+
+1. Setting up a Virtual IP address with an Application Load Balancer
+1. Configuring Db2 HADR Pacemaker cluster fencing on IBM Cloud
+
+Links to the configuration activities for each step are provided in the next sections.
 
 ### Virtual IP Address setup
 {: #deploy-db2-vip}
@@ -127,22 +132,11 @@ This is content under a third-level subheading.
 For more information, see [Setting up two-node Db2 HADR Pacemaker cluster with fencing on IBM Cloud](https://www.ibm.com/support/pages/node/7228864).
 
 ## Deploy SAP
-{: #deploy-db2-config}
+{: #deploy-sap}
 
 The first step is to deploy the infrastructure - Virtual System Instances (VSIs) or Bare Metal servers - that will be used to support the IBM Db2 and SAP Pacemaker clusters.
 
 For more information, see [Managing access to CloudWidget](/docs/url).
-
-1. Do step 1.
-1. Do step 2.
-1. Do step 3.
-
-For more details on these steps, see:
-
-### Third-level subheading
-{: #unique-id-3}
-
-This is content under a third-level subheading.
 
 ## Testing
 {: #deploy-testing}
@@ -156,8 +150,3 @@ For more information, see [Managing access to CloudWidget](/docs/url).
 1. Do step 3.
 
 For more details on these steps, see:
-
-### Third-level subheading
-{: #unique-id-3}
-
-This is content under a third-level subheading.

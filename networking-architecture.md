@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-03-27"
+lastupdated: "2025-03-28"
 
 subcollection: pattern-db2-sap-vpc
 
@@ -23,17 +23,22 @@ The following link will take you to the networking architectural decisions for S
 ## Resilient communication between enterprise networks and IBM Cloud servers
 {: #resilient-comms-to-cloud}
 
-On-prem to IBM Cloud traffic comes via an IPSec tunnel. xxxxx
+Most organisations will connect their IBM Cloud-based SAP/Db2 environment to on-premises systems and applications. A single network link between the cloud and the enterprise networks is a potential point of failure so needs protection too.
 
+The following diagram shows a highly available network connection between the enterprise and IBM Cloud:
 
-* Configure GRE tunnels between the Transit Gateway (TGW) and the firewalls, with one tunnel connecting to Firewall1 and the other to Firewall2.
+![Highly available networking between an enterprise and IBM Cloud](/images/sap-db2-network-ha.drawio.svg "Highly available networking between an enterprise and IBM Cloud"){: caption="Highly available networking between an enterprise and IBM Cloud" caption-side="bottom"}
 
-* Set up eBGP on the Palo Alto firewall to advertise the on-premises CIDR to the TGW.
+In this example, network traffic between the on-premises environment and IBM Cloud is via an IPSec tunnel. Separate links exist between two on-premises firewalls and two cloud-based firewalls.  The two links protect against a single link or firewall failure. To automate failover between the two network links:
+
+* Configure Generic Routing Encapsulation (GRE) tunnels between the Transit Gateway (TGW) and the firewalls, with one tunnel connecting to the first firewall and the other to the second firewall.
+
+* Set up eBGP (Border Gateway Protocol) on the firewalls to advertise the on-premises CIDR to the Transit Gateway.
 
 * Configure route prepending on the second GRE tunnel to ensure traffic consistently uses the primary tunnel.
 
-* Enable BFD on both firewalls, including those on IBM and the on-premises side.
+* Enable Bidiretional Forwarding Detection (BFD) on both firewalls, including those on IBM Cloud and the on-premises sides.
 
-* If the IPSec tunnel between the on-premises network and IBM goes down, route advertisements will automatically be removed from the primary GRE tunnel, and traffic will seamlessly switch to the secondary tunnel.
+* If the IPSec tunnel between the on-premises network and IBM Cloud fails, route advertisements will automatically be removed from the primary GRE tunnel, and traffic will seamlessly switch to the secondary tunnel.
 
-* This configuration eliminates dependency on VPC routes, avoiding the need for manual route updates.
+This configuration eliminates dependency on VPC routes, avoiding the need for manual route updates.
