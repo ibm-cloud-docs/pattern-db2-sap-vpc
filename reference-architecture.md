@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-03-28"
+lastupdated: "2025-04-02"
 
 keywords: SAP, Db2, Pacemaker, SUSE, SLES, SUSE Linux, High Availability, cluster
 
@@ -157,6 +157,6 @@ The following table outlines the products or services used in the architecture f
 |  | [Secrets Manager](/docs/secrets-manager?topic=secrets-manager-getting-started) | Certificate and Secrets Management |
 | Resiliency | [Pacemaker](/https://clusterlabs.org/projects/pacemaker) | The Pacemaker software manages failures of application or database server nodes by managing failover to a surviving cluster node (VSI or Bare Metal) |
 | Service Management | [IBM Cloud Monitoring](/docs/monitoring?topic=monitoring-about-monitor) | Operational monitoring |
-|  | [IBM Cloud Log Analysis](/docs/log-analysis?topic=log-analysis-getting-started) | Operational logs |
-|  | [Activity Tracker Event Routing](/docs/activity-tracker?topic=activity-tracker-getting-started) | Audit logs |
+|  | [IBM Cloud](/docs/cloud-logs) | For all IBM Cloud related Logs |
+|  | [Event Routing](/docs/cloud-logs) | For all IBM Cloud events  |
 {: caption="Components" caption-side="bottom"}
