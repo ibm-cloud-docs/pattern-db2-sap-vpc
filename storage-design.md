@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-03-31"
+lastupdated: "2025-04-08"
 
 subcollection: pattern-db2-sap-vpc
 
@@ -19,7 +19,7 @@ This pattern is built within an IBM Cloud Virtual Private Cloud (VPC) environmen
 
 [IBM Cloud® Virtual Private Cloud (VPC) Infrastructure environment introduction](/docs/sap?topic=sap-vpc-env-introduction).
 
-Block storage is provided with your virtual servers and uses input/output operations per second (IOPS) to determine storage needs. It is ideal for storage-intensive applications with high I/O needs, such as an OS, and database and application software. This option is the perfect companion for SAP HANA workloads.
+Block storage is provided with your virtual servers and uses input/output operations per second (IOPS) to determine storage needs. It is ideal for storage-intensive applications with high I/O needs, such as an OS, and database and application software. 
 
 It is recommended that the Boot Volume of the VSI is NOT used to provide block storage for both Db2 and SAP. This should be added as separate volumes.{: note}
 
