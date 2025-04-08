@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-03-24"
+lastupdated: "2025-04-08"
 
 subcollection: pattern-db2-sap-vpc
 
@@ -21,13 +21,13 @@ The Highly Available SAP with {{site.data.keyword.IBM_notm}} Db2 on {{site.data.
 
     * Two IBM Db2 cluster nodes connected to one another by the IBM Cloud network.  These nodes are Virtual System Instances (VSIs) running within a Virtual Private Cloud (VPC).
 
-    * Separate disk storage attached to each of the VSIs that contains the DB2 database.  Note that Db2 does not operate with shared storage.
+    * Separate disk storage attached to each of the VSIs that contains the Db2 database.  Note that Db2 HADR does not operate with shared storage.
 
-        Databases are key repositories of business information requiring them to be both performant and highly available.  The Db2 databases are made highly available using Db2 High Availability and Disaster Recovery (HADR).  This is a data replication feature.  With HADR there two separate Db2 database servers: a primary and a standby with all clients connected to the primary server. Database transactions are written to log files and these log files are transferred to the second (standby) database server over the network. The standby server updates the local database using the transferred log files to be kept synchronised with the primary server.  In the event of a failure of the primary database server, the standby database server takes over the workload.  
+        Databases are key repositories of business information requiring them to be both performant and highly available.  The Db2 databases are made highly available using Db2 High Availability and Disaster Recovery (HADR).  This is a data replication feature.  With HADR there two separate Db2 database servers: a primary and a standby with all clients connected to the primary server. Database transactions are transferred to the second (standby) database server over the network. The standby server updates its local database using these transactions to be kept synchronised with the primary server.  In the event of a failure of the primary database server, the standby database server takes over the workload.  
 
     * A floating, virtual IP address that allows clients to connect to the Db2 database service no matter which cluster node it is running on.
 
-    * Use of a cloud fencing agent to avoid split-brain scenarios when the cluster nodes cannot communicate with one another.
+    * Use of a Qdevice Host or cloud fencing agent to avoid split-brain scenarios when the cluster nodes cannot communicate with one another.
 
     * Active-passive failover and failback of resources from one cluster node to the other if the active host fails.
 

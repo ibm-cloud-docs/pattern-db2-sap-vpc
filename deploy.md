@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-03-28"
+lastupdated: "2025-04-08"
 
 keywords:
 
@@ -61,19 +61,14 @@ For more information and a walkthrough of these steps, see [Deploying your Bare 
 
 After the infrastructure has been deployed, the next step installs the software that is required to support the IBM Db2 and SAP Pacemaker clusters.
 
-1. Installing IBM Db2 software
-1. Installing SAP software
+1. Installing SAP and IBM Db2 software
 1. Installing the Pacemaker software in the SAP cluster
 1. Installing the Pacemaker software in the IBM Db2 cluster
 
-### Installing the IBM Db2 software
+### Installing the SAP and IBM Db2 software
 {: #deploy-db2-pm}
 
 IBM Cloud provides a fully managed Db2 service via the IBM Cloud catalog (https://cloud.ibm.com/catalog/services/db2). This pattern **does not** use this cloud service and requires Db2 to be manually installed. {: important}
-
-The following link describes the installation of the IBM Db2 software:
-
-* [Installing Db2 Database Servers](https://www.ibm.com/docs/en/db2/12.1?topic=installing-db2-database-servers)
 
 ### Download and install SAP software and applications
 {: #deploy-sap-sw}
@@ -93,9 +88,11 @@ SAP uses the Pacemaker software provided by the Linux distribution that you are 
 ### Installing the Pacemaker software in the IBM Db2 cluster
 {: #deploy-db2-pm-install}
 
-IBM Db2 provides its own Pacemaker cluster software package that is intended for use with Db2. This should be used instead of the Pacemaker software provided by the Linux distribution. The following link describes the installation of the IBM Db2 Pacemaker software:
+IBM Db2 provides its own Pacemaker cluster software package that is intended for use with Db2. This must be used instead of the Pacemaker software provided by the Linux distribution. The following links describe the installation of the IBM Db2 Pacemaker software:
 
 * [Installing the Pacemaker cluster software stack](https://www.ibm.com/docs/en/db2/12.1?topic=manager-installing-pacemaker-cluster)
+* [Installing Pacemaker with IBM Db2 | SAP Help Portal](https://help.sap.com/docs/DB6/e3eefec5d20740f4872652a475457348/f725ea789c4043e5bee3d0fafd07bc9e.html)
+
 
 ## Configure Db2 Pacemaker
 {: #deploy-db2-config}
@@ -103,7 +100,7 @@ IBM Db2 provides its own Pacemaker cluster software package that is intended for
 The IBM Db2 Pacemaker configuration requires two steps:
 
 1. Setting up a Virtual IP address with an Application Load Balancer
-1. Configuring Db2 HADR Pacemaker cluster fencing on IBM Cloud
+1. Configuring Db2 HADR Pacemaker cluster fencing or Qdevice on IBM Cloud
 
 Links to the configuration activities for each step are provided in the next sections.
 
@@ -128,7 +125,7 @@ For more information on configuring Pacemaker with the *fence_ibm_vpc* fencing a
 ## Deploy SAP
 {: #deploy-sap}
 
-IBM provides several templates with scripts to deploy different SAP NetWeaver and SAP HANA architectures.  These use Terraform or Terraform and Ansible to deploy SAP. For more information, see [SAP Terraform deployment templates](/docs/sap?topic=sap-terraform-templates).
+IBM provides several templates with scripts to deploy different SAP NetWeaver and IBM Db2 architectures.  These use Terraform or Terraform and Ansible to deploy SAP. For more information, see [SAP Terraform deployment templates](/docs/sap?topic=sap-terraform-templates).
 
 ## Testing
 {: #deploy-testing}

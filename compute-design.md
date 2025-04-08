@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-03-31"
+lastupdated: "2025-04-08"
 
 subcollection: pattern-db2-sap-vpc
 
@@ -19,7 +19,7 @@ This pattern is built within an IBM Cloud Virtual Private Cloud (VPC) environmen
 
 [IBM Cloud® Virtual Private Cloud (VPC) Infrastructure environment introduction](/docs/sap?topic=sap-vpc-env-introduction).
 
-The pattern requires a pair of servers to support the Db2 database and a pair of servers to support the SAP components. These can be either Virtual Server Instances (VSIs) or Bare Metal servers.  For more information on these choices, see:
+The pattern requires a pair of servers to support the Db2 HADE primary and standby database and a pair of servers to support the SAP components. These can be either Virtual Server Instances (VSIs) or Bare Metal servers.  For more information on these choices, see:
 
 * Virtual Server Instances (VSIs)
 
