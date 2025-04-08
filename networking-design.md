@@ -17,7 +17,7 @@ keywords: network
 
 This pattern is built within an IBM Cloud Virtual Private Cloud (VPC) environment. For more details on IBM Cloud VPC, see:
 
-Your business and functional requirements determine the SAP solutions powered by the SAP HANA Database Server or SAP NetWeaver Application Server, and therefore determine how your applications are run in the available infrastructure. For more information, see:
+Your business and functional requirements determine the SAP solutions powered by the SAP NetWeaver Application Server, and therefore determine how your applications are run in the available infrastructure. For more information, see:
 
 [Networking design considerations](/docs/sap?topic=sap-networking-design-considerations).
 
