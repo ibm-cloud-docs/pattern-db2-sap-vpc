@@ -20,7 +20,7 @@ The following sections summarize the resiliency architecture decisions for resil
 
 | Architecture decision | Requirement | Decision | Rationale |
 | -------------- | -------------- | -------------- | -------------- |
-| High Availability Db2 | Provide 99.95% availability for Db2 databases | IBM Db2 HADR | Enabling Db2 HADR addresses Db2 outage reduction due to planned maintenance, faults, and disasters. It supports a recovery point objective (RPO) of 0 seconds and a recovery time objective (RTO) measured in minutes. |
+| High Availability Db2 | Provide high availability for Db2 databases | IBM Db2 HADR | Enabling Db2 HADR addresses Db2 outage reduction due to planned maintenance, failures, faults and disasters |
 | High Availability infrastructure | Provide 99.95% availability for infrastructure | Redundant VSIs in an SAP Scale-out deployment with {{site.data.keyword.alb_full}} (ALB) solution on a single-zone can provide an application SLA of 99.95% \n Auto Scale for VPC (optional)  | Minimize cost, implementation and maintenance complexity, potential latency and maximize value with {{site.data.keyword.IBM}} solutions.|
 {: caption="Architecture decisions for High Availability (HA)" caption-side="bottom"}
 
@@ -39,6 +39,6 @@ The following sections summarize the resiliency architecture decisions for resil
 | Architecture decision | Requirement | Decision | Rationale |
 | -------------- | -------------- | -------------- | -------------- |
 | Backup (Db2) | Back up of Db2 data | * IBM Db2 database backup \n * IBM Db2 storage snapshot | Minimize cost and operational ease by using Db2 Native tools |
-| Backup (SAP) | Back up of NetWeaver data | * SAP NetWeaver(NW) file level backup \n * SAP NetWeaver(NW) storage snapshot | Use SAP Native tools like DBACOCKPIT, HANACOCKPIT, and Backint. |
+| Backup (SAP) | Back up of NetWeaver data | * SAP NetWeaver(NW) file level backup \n * SAP NetWeaver(NW) storage snapshot | Use SAP Native tools like DBACOCKPIT and Backint. |
 | Backup for VPC infrastructure | Infrastructure backups | Veeam for snapshot backups at VM/BM level. |The backups are integrated with {{site.data.keyword.Bluemix_notm}} native backup solution of Veeam by using the API that's available to store the backup in the {{site.data.keyword.cos_full_notm}}.
 {: caption="Architecture decisions for backup and restore" caption-side="bottom"}
