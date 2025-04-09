@@ -33,6 +33,13 @@
       "href": "https://www.redbooks.ibm.com/abstracts/sg248531.html",
       "type": "redbook",
       "recommended": true
+    },
+    {
+      "title": "Database Administration Guide for SAP on IBM Db2 for Linux, UNIX, and Windows",
+      "description": "This guide provides information about the administration of IBM Db2 for Linux, UNIX, and Windows in an SAP environment.",
+      "href": "https://help.sap.com/docs/DB6/e3eefec5d20740f4872652a475457348/8f6d6352cafb412e914c58c944a34b4e.html",
+      "type": "website",
+      "recommended": true
     }
   ],
   "section_architectures": [
