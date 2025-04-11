@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-04-08"
+lastupdated: "2025-04-11"
 
 keywords:
 
@@ -118,7 +118,7 @@ For more information on the steps to configure this Virtual IP address, see [Set
 
 Pacemaker provides different mechanisms to handle node failures and in particular the 'split brain' scenario in a two node cluster. One mechanisim is to use a third **quorum node** within the Pacemaker cluster to arbitrate when one of the HADR cluster nodes fails.
 
-On IBM Cloud, while you can configure a quorum device on a third host, there is an alternative that uses a **fencing agent**. The fencing agent interacts with the IBM Cloud infrastructure to start, stop,  or reboot the virtual machines. The advantage of configuring a two-node HADR Pacemaker cluster with fencing is that it removes the requirement of a third host for the quorum device, thus reducing on-going cost. 
+On IBM Cloud, while you can configure a quorum device on a third host, there is an alternative that uses a **fencing agent**. The fencing agent interacts with the IBM Cloud infrastructure to start, stop, monitor and/or reboot the virtual machines. The advantage of configuring a two-node HADR Pacemaker cluster with fencing is that it removes the requirement of a third host for the quorum device, thus reducing on-going cost. 
 
 For more information on configuring Pacemaker with the *fence_ibm_vpc* fencing agent, see [Setting up two-node Db2 HADR Pacemaker cluster with fencing on IBM Cloud](https://www.ibm.com/support/pages/node/7228864).
 
