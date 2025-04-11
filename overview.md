@@ -12,7 +12,10 @@ keywords:
 # Overview
 {: #overview}
 
-The highly available SAP with Db2 on {{site.data.keyword.vpc_full}} deployment guide provides an {{site.data.keyword.IBM_notm}} solution design for the deployment of a highly available Db2 database on {{site.data.keyword.vpc_short}} using either SUSE Linux Enterprise Server or Red Hat Enterprise Linux. This solution uses Pacemaker, an open source high-availability cluster resource manager, to deliver high availabilty to the Db2 database. This guide, in turn, can form the basis of a highly available SAP deployment by using the Pacemaker software.
+The highly available SAP with Db2 on {{site.data.keyword.vpc_full}} pattern provides an {{site.data.keyword.IBM_notm}} solution design for deployment on {{site.data.keyword.cloud_notm}} using SUSE Linux Enterprise Server or Red Hat Enterprise Linux. This solution uses Pacemaker, an open source high-availability cluster resource manager to deliver high availability to the Db2 database. 
+
+## Pattern objectives 
+{: db2-sap-objectives}
 
 This document is intended to:
 
@@ -20,12 +23,15 @@ This document is intended to:
 * Provide a solution design, with diagrams, component architecture decisions along with rationale for cloud component selection to meet enterprise requirements.
 * Provide links to key documentation sources describing the deployment steps required to build these solutions.
 
-This document is not intended to replace or supercede any documentation for either Db2 or SAP. Rather, this document brings these diverse documentation resources together to deliver a highly available solution.
+## Pattern details 
+{: db2-pattern-details}
+
+This document is not intended to replace or supersede any documentation for either Db2 or SAP. Rather, this document brings these diverse documentation resources together to deliver a highly available solution.
 
 Following the Architecture Framework, the highly available SAP with Db2 on {{site.data.keyword.vpc_short}} pattern covers design considerations and architecture decisions for the following aspects and domains:
 
 - Compute: Virtual and Bare Metal Servers
-- Storage: Primary atorage
+- Storage: Primary storage
 - Networking: In-cloud and cloud-to-enterprise connectivity including hostname resolution
 - Resiliency: High availability
 - Service Management: Monitoring, Logging, Auditing, Alerting
