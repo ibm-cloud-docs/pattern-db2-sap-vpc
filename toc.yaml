@@ -42,9 +42,9 @@ toc:
         - topicgroup:
             label: Architecture decisions
             topics:
-            - topic: compute-architecture.md
+            - include: ../pattern-sap-on-vpc/compute-decisions.md
               navtitle: Compute
-            - topic: storage-architecture.md
+            - include: ../pattern-sap-on-vpc/storage-decisions.md
               navtitle: Storage
             - topic: networking-architecture.md
               navtitle: Networking
