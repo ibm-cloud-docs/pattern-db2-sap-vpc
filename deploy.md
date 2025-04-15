@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-04-11"
+lastupdated: "2025-04-15"
 
 keywords:
 
@@ -128,7 +128,7 @@ For more information on configuring Pacemaker with the *fence_ibm_vpc* fencing a
 
 The final step is to test the environment to ensure that failures are handled as expected by the Pacemaker cluster. The tests depend on the configuration that has been implemented and might include:
 
-1. Manually moving the SAP ASCS instance
+1. Manually moving the SAP ABAP Central Services (ASCS) instance
 1. Manually moving the SAP ERS instance
 1. Testing failure of the SAP ASCS instance
 1. Testing failure of the SAP ERS instance

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-04-14"
+lastupdated: "2025-04-15"
 
 keywords: SAP, Db2, Pacemaker, SUSE, SLES, SUSE Linux, High Availability, cluster
 
@@ -69,7 +69,7 @@ This diagram shows how the various components of the pattern deliver high availa
 
 * Two key SAP components in the SAP instance are available, the ABAP SAP Central Services (ASCS) and Enqueue Replication Server (ERS). Just as Db2 uses its HADR component to replicate data between the servers in its Pacemaker cluster, SAP uses a technique that is called Enqueue Replication to do the same.
 
-* SAP applications also access the SAP Application Server and ASCS through a Virtual IP address that can move when failures occur. Pacemaker manages the movement of the VIPs for both ASCS and ERS as required.
+* SAP applications also access the SAP Application Server and ASCS through a Virtual IP address that can move when failures occur. Pacemaker manages the movement of the virtual IPs for both ASCS and ERS as required.
 
 Review the design considerations and architecture decisions for the following aspects and domains:
 
