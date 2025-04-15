@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-04-14"
+lastupdated: "2025-04-15"
 
 subcollection: pattern-db2-sap-vpc
 
@@ -28,7 +28,8 @@ All block storage is selected based on capacity (GB) and performance (IOPS) meas
 
 Storage volumes differ in performance that depends on the IOPS tier. You can select among 3, 5, and 10 IOPS/GB. For more information, see [Tiered IOPS profiles](/docs/vpc?topic=vpc-block-storage-profiles&interface=ui#tiers). You can also select a [custom value](/docs/vpc?topic=vpc-block-storage-profiles&interface=ui#custom) in GB and IOPS, that is based on the blocksize of the storage. If you need more than the initially provisioned storage in your server, you can attach more volumes to it. Contact [IBM Cloud Support](/docs/account?topic=account-using-avatar#getting-support) for extension options if the attached storage is insufficient for your workload.
 
-Shared Storage
+## Shared storage
+{: #shared-storage}
 
 Block storage can be detached and attached to other servers at any time, but, only to one server at the same time.
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-04-11"
+lastupdated: "2025-04-15"
 
 subcollection: pattern-db2-sap-vpc
 
@@ -15,9 +15,9 @@ keywords: Intel, virtual machine, VSI, server, host, compute
 # Compute design
 {: #compute-design}
 
-This pattern is built within an IBM Cloud Virtual Private Cloud (VPC) environment. For more information, see [IBM Cloud® Virtual Private Cloud (VPC) Infrastructure environment introduction](/docs/sap?topic=sap-vpc-env-introduction).
+This pattern is built within an IBM Cloud Virtual Private Cloud (VPC) environment. For more information, see [IBM Cloud® Virtual Private Cloud (VPC) infrastructure environment](/docs/sap?topic=sap-vpc-env-introduction).
 
-The pattern requires a pair of servers to support the Db2 HADE primary and standby database and a pair of servers to support the SAP components that can either be Virtual Server Instances (VSIs) or Bare Metal servers. For more information, see:
+The pattern requires a pair of servers to support the Db2 HADE primary and standby database and a pair of servers to support the SAP components. The SAP component options are Virtual Server Instances (VSIs) or Bare Metal servers. For more information, see:
 
 * Virtual Server Instances (VSIs)
 
@@ -33,5 +33,5 @@ The pattern requires a pair of servers to support the Db2 HADE primary and stand
 
 The database servers that run IBM Db2 must be sized to support the workload requirements. For more information, see [System requirements for IBM Db2 for Linux, UNIX, and Windows](https://www.ibm.com/support/pages/system-requirements-ibm-db2-linux-unix-and-windows){: external}.
 
-Only certain server profiles - both VSIs and Bare Metal servers - are supported for running SAP. For more information, see [Infrastructure certified for SAP](/docs/sap?topic=sap-iaas-offerings).
+Only certain server profiles, both VSIs and Bare Metal servers, are supported for running SAP. For more information, see [Infrastructure certified for SAP](/docs/sap?topic=sap-iaas-offerings).
 {: note}

@@ -15,7 +15,7 @@ toc:
     compliance: ISOIEC27001
     deployable: false
     description: Deploying highly available SAP and Db2 on IBM Cloud VPC using SUSE Linux
-    label: Highly Available SAP with Db2 on IBM Cloud VPC
+    label: Highly available SAP with Db2 on IBM Cloud VPC
   entries:
   - navgroup:
       id: overview

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-04-14"
+lastupdated: "2025-04-15"
 
 subcollection: pattern-db2-sap-vpc
 
@@ -14,6 +14,8 @@ keywords:
 
 # References
 {: #references}
+
+Review the following references to guide you through the highly available SAP with Db2 on {{site.data.keyword.vpc_full}} pattern.
 
 [IBM Cloud Virtual Private Cloud (VPC) infrastructure environment](/docs/sap?topic=sap-vpc-env-introduction)
 
