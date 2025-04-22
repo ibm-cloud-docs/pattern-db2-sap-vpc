@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-04-15"
+lastupdated: "2025-04-22"
 
 subcollection: pattern-db2-sap-vpc
 
@@ -15,9 +15,9 @@ keywords: Intel, virtual machine, VSI, server, host, compute
 # Compute design
 {: #compute-design}
 
-This pattern is built within an IBM Cloud Virtual Private Cloud (VPC) environment. For more information, see [IBM Cloud® Virtual Private Cloud (VPC) infrastructure environment](/docs/sap?topic=sap-vpc-env-introduction).
+This pattern is built within an {{site.data.keyword.Bluemix_notm}} Virtual Private Cloud (VPC) environment. For more information, see [IBM Cloud Virtual Private Cloud (VPC) infrastructure environment](/docs/sap?topic=sap-vpc-env-introduction).
 
-The pattern requires a pair of servers to support the Db2 HADE primary and standby database and a pair of servers to support the SAP components. The SAP component options are Virtual Server Instances (VSIs) or Bare Metal servers. For more information, see:
+The pattern requires a pair of servers to support the Db2 HADR primary and standby database and a pair of servers to support the SAP components. The SAP component options are Virtual Server Instances (VSIs) or Bare Metal servers. For more information, see:
 
 * Virtual Server Instances (VSIs)
 

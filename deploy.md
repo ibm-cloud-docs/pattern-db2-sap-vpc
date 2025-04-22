@@ -85,7 +85,7 @@ For more information about these steps, see [Deploying your Bare Metal infrastru
 ## Install the required software
 {: #deploy-reqd-sw}
 
-After the infrastructure has been deployed, install the software that is required to support the IBM Db2 and SAP Pacemaker clusters.
+After the infrastructure has been deployed, install the software that is required to support the {{site.data.keyword.IBM_notm}} Db2 and SAP Pacemaker clusters.
 
 * Installing SAP and IBM Db2 software
 * Installing the Pacemaker software in the SAP cluster
@@ -114,7 +114,9 @@ SAP uses the Pacemaker software that is provided by the Linux distribution that 
 ### Installing the Pacemaker software in the IBM Db2 cluster
 {: #deploy-db2-pm-install}
 
-IBM Db2 provides its own Pacemaker cluster software package that is intended for use with Db2. This must be used instead of the Pacemaker software that is provided by the Linux distribution. The following links describe the installation of the IBM Db2 Pacemaker software:
+{{site.data.keyword.IBM_notm}} Db2 provides its own Pacemaker cluster software package that is intended for use with Db2. This must be used instead of the Pacemaker software that is provided by the Linux distribution. {: important}
+
+The following links describe the installation of the IBM Db2 Pacemaker software:
 
 * [Installing the Pacemaker cluster software stack](https://www.ibm.com/docs/en/db2/12.1?topic=manager-installing-pacemaker-cluster){: external}
 * [Installing Pacemaker with IBM Db2 SAP Help Portal](https://help.sap.com/docs/DB6/e3eefec5d20740f4872652a475457348/f725ea789c4043e5bee3d0fafd07bc9e.html){: external}
