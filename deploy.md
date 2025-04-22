@@ -31,11 +31,11 @@ If you do not yet have an {{site.data.keyword.Bluemix}} SSH key and VPC deployed
 ### Securing Access to your environment
 {: #deploy-before-start-secure}
 
-Security is one of the biggest concerns when you run your business-critical applications in a cloud environment. To secure your connection to your {{site.data.keyword.IBM_notm}} Virtual Servers, a public SSH key can be uploaded to your account, per region. These public keys are deployed to your virtual servers instances to allow access to the servers.
+Security is a significant concern when running business-critical applications in a cloud environment. To secure your connection to your {{site.data.keyword.IBM_notm}} Virtual Servers, a public SSH key can be uploaded to your account, per region. These public keys are deployed to your virtual servers instances to allow access to the servers.
 
 Before you continue, create an SSH public key that you can upload later to the region of your choice when you are creating the virtual server instance. Follow the steps that are documented at [Getting started with SSH keys](/docs/vpc?topic=vpc-ssh-keys&interface=ui).
 
-You use security groups to restrict access to and from IP ranges, protocols, and ports. Security groups aren't within the scope of this guidance, and the default security group that is deployed with your sample VPC can suffice. However, you might have to add extra ports for exceptions to the access restrictions, such as, the SAP Software Provisioning Manager and for the ports that are being used by your SAP NetWeaver based application.
+You use security groups to restrict access to and from IP ranges, protocols, and ports. Security groups aren't within the scope of this guidance, and the default security group that is deployed with your sample VPC can suffice. However, you might have to add other ports for exceptions to the access restrictions, such as, the SAP Software Provisioning Manager and for the ports that are being used by your SAP NetWeaver based application.
 
 ### Create an IBM Cloud VPC
 {: #deploy-before-start-vpc}
