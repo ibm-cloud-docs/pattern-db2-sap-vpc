@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-04-15"
+lastupdated: "2025-04-22"
 
 subcollection: pattern-db2-sap-vpc 
 
@@ -12,7 +12,7 @@ keywords:
 # Overview
 {: #overview}
 
-The objective of this pattern is to provide an {{site.data.keyword.IBM_notm}} solution design for the highly available SAP with Db2 on {{site.data.keyword.vpc_full}} using SUSE Linux Enterprise Server or Red Hat Enterprise Linux. This solution uses Pacemaker, an open source high-availability cluster resource manager to deliver high availability to the Db2 database. 
+The objective of this pattern is to provide an {{site.data.keyword.IBM_notm}} solution design for the highly available SAP with Db2 on {{site.data.keyword.vpc_full}} using SUSE Linux Enterprise server or Red Hat Enterprise Linux. This solution uses Pacemaker, an open source high-availability cluster resource manager to deliver high availability to the Db2 database. 
 
 ## Pattern objectives 
 {: db2-sap-objectives}
@@ -30,10 +30,10 @@ This document is not intended to replace or supersede any documentation for eith
 
 Following the Architecture Framework, the highly available SAP with Db2 on {{site.data.keyword.vpc_short}} pattern covers design considerations and architecture decisions for the following aspects and domains:
 
-- Compute: Virtual and Bare Metal Servers
+- Compute: Virtual and bare metal servers
 - Storage: Primary storage
 - Networking: In-cloud and cloud-to-enterprise connectivity including hostname resolution
 - Resiliency: High availability
-- Service Management: Monitoring, Logging, Auditing, Alerting
+- Service management: Monitoring, Logging, Auditing, Alerting
 
-The Architecture Framework provides a consistent approach to design cloud solutions by addressing requirements across a set of "aspects" and "domains", which are technology-agnostic architectural areas that need to be considered for any enterprise solution. For more details, see [Introduction to the Architecture Framework](/docs/architecture-framework).
+The Architecture Framework provides a consistent approach to design cloud solutions by addressing requirements across a set of "aspects" and "domains", which are technology-agnostic architectural areas that need to be considered for any enterprise solution. For more information, see [Introduction to the Architecture Framework](/docs/architecture-framework).

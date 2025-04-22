@@ -19,7 +19,7 @@ The basis of any cloud solution is the compute resources that run the applicatio
 
 This pattern is built within an {{site.data.keyword.Bluemix_notm}} Virtual Private Cloud (VPC) environment. For more information, see [IBM Cloud Virtual Private Cloud (VPC) infrastructure environment](/docs/sap?topic=sap-vpc-env-introduction).
 
-The pattern requires a pair of servers to support the Db2 HADR primary and standby database and a **separate** pair of servers to support the SAP components. The SAP component options are Virtual Server Instances (VSIs) or Bare Metal servers. For more information, see:
+The pattern requires a pair of servers to support the Db2 high availability disaster recovery (HADR) primary and standby database and a separate pair of servers to support the SAP components. The SAP component options are Virtual Server Instances (VSIs) or Bare Metal servers. For more information, see:
 
 * Virtual Server Instances (VSIs)
 

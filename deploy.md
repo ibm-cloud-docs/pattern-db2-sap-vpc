@@ -15,7 +15,7 @@ subcollection: pattern-db2-sap-vpc
 # Deploying highly available SAP with Db2
 {: #deploy-db2-sap}
 
-The Highly available SAP with Db2 on IBM Cloud VPC solution requires manual configuration of a number of non-{{site.data.keyword.cloud_notm}} software components. This deployment process requires a number of specific deployment and configuration steps as described:
+The highly available SAP with Db2 on IBM Cloud VPC solution requires manual configuration of various non-{{site.data.keyword.cloud_notm}} software components. This deployment process requires various specific deployment and configuration steps as described:
 
 1. Deploy {{site.data.keyword.cloud_notm}} infrastructure resources
 1. Install the required software
@@ -23,19 +23,19 @@ The Highly available SAP with Db2 on IBM Cloud VPC solution requires manual conf
 1. Deploy SAP
 1. Test the environment
 
-## Before you start
-{: #deploy-before-start}
+## Before you begin
+{: #deploy-before-begin}
 
-If you do not yet have an {{site.data.keyword.Bluemix}} SSH key and VPC deployed, you will need to get these set up before continuing.  If these already exist, you can move on to deploying your infrastructure resources.
+You need an {{site.data.keyword.Bluemix}} SSH key and a Virtual Private Cloud (VPC) deployed before continuing. If an SSH key or VPC already exists, you can get started on deploying your infrastructure resources.
 
-### Securing Access to your environment
+### Securing access to your environment
 {: #deploy-before-start-secure}
 
 Security is a significant concern when running business-critical applications in a cloud environment. To secure your connection to your {{site.data.keyword.IBM_notm}} Virtual Servers, a public SSH key can be uploaded to your account, per region. These public keys are deployed to your virtual servers instances to allow access to the servers.
 
-Before you continue, create an SSH public key that you can upload later to the region of your choice when you are creating the virtual server instance. Follow the steps that are documented at [Getting started with SSH keys](/docs/vpc?topic=vpc-ssh-keys).
+Before you continue, create an SSH public key that you can upload later to the region of your choice when you are creating the virtual server instance. For more information, see [Getting started with SSH keys](/docs/vpc?topic=vpc-ssh-keys).
 
-You use security groups to restrict access to and from IP ranges, protocols, and ports. Security groups aren't within the scope of this guidance, and the default security group that is deployed with your sample VPC can suffice. However, you might have to add other ports for exceptions to the access restrictions, such as, the SAP Software Provisioning Manager and for the ports that are being used by your SAP NetWeaver based application.
+You use security groups to restrict access to and from IP ranges, protocols, and ports. Security groups aren't within the scope of this guidance, and the default security group that is deployed with your sample VPC can suffice. However, you might have to add other ports for exceptions to the access restrictions, such as, the SAP Software Provisioning Manager and for the ports that are being used by your SAP NetWeaver-based application.
 
 ### Create an IBM Cloud VPC
 {: #deploy-before-start-vpc}
@@ -43,29 +43,29 @@ You use security groups to restrict access to and from IP ranges, protocols, and
 Cloud resources are deployed in a global region within a VPC. Use the following steps to create a VPC:
 
 1. Log in to the IBM Cloud console with your unique credentials.
-1. Navigate to [Virtual private clouds](https://cloud.ibm.com/infrastructure/network/vpcs) {: external}.
-1.  Click the **Create** button.
-1. Select the **Geography** and **Region** your VPC will be deployed in from the dropdown menus.
-1. Enter a unique Name for the VPC, for example, *sap-db2-cluster*.
-1. Keep the default Resource group unless you wish to create a new one. Use resource groups to organize your account resources for access control and billing purposes. For more information, see [Best practices for organizing resources in a resource group](/docs/account?topic=account-account_setup).
-1. Optional: Tags. Enter tags to help you organize and find your resources. You can add more tags later. For more information, see [Working with tags](/docs/account?topic=account-tag).
-1. Keep the Default security group settings, which allow inbound SSH and ping traffic to virtual server instances in this VPC.
+1. Go to [Virtual Private Clouds](https://cloud.ibm.com/infrastructure/network/vpcs) {: external}.
+1. Click **Create**.
+1. Select the **Geography** and **Region** where your VPC will be deployed.
+1. Enter a unique name for the VPC, for example, *sap-db2-cluster*.
+1. Keep the default resource group unless you want to create a new one. Use resource groups to organize your account resources for access control and billing purposes. For more information, see [Best practices for organizing resources in a resource group](/docs/account?topic=account-account_setup).
+1. Optional: Enter tags to help you organize and find your resources. You can add more tags later. For more information, see [Working with tags](/docs/account?topic=account-tag).
+1. Keep the default security group settings, which allow inbound SSH and ping traffic to virtual server instances in this VPC.
 
 ## Deploy {{site.data.keyword.cloud_notm}} infrastructure resources
 {: #deploy-cloud-infra}
 
-The first step is to deploy the infrastructure, Virtual System Instances (VSIs), or Bare Metal servers to support the {{site.data.keyword.IBM_notm}} Db2 and SAP Pacemaker clusters.
+The first step is to deploy the infrastructure, Virtual System Instances (VSIs) or Bare Metal servers to support the {{site.data.keyword.IBM_notm}} Db2 and SAP Pacemaker clusters.
 
 ### Installing Virtual Server infrastructure
 {: #deploy-cloud-infra-vsi}
 
-If you are using Virtual System Instances (VSIs), you must complete the following steps:
+If you are using Virtual Server Instances (VSIs), you must complete the following steps:
 
-* Setting up a Virtual Private Cloud (VPC) and subnet
-* Provisioning Intel virtual servers
-* Adding Block Storage for VPC
-* Creating the network interfaces
-* Readying your Operating System
+* Set up a Virtual Private Cloud (VPC) and subnet
+* Provision Intel virtual servers
+* Add Block Storage for VPC
+* Create the network interfaces
+* Ready your operating system
 
 For more information about these steps, see [Deploying your VPC VSI infrastructure](/docs/sap?topic=sap-vs-set-up-infrastructure).
 
@@ -74,22 +74,22 @@ For more information about these steps, see [Deploying your VPC VSI infrastructu
 
 If you are using Bare Metal servers, you must complete the following steps:
 
-1. Setting up a Virtual Private Cloud (VPC) and subnet
-1. Provisioning Intel bare metal servers
-1. Creating the network interfaces
-1. Readying your Operating System
-1. Defining the storage layout for your Bare Metal servers
+1. Set up a Virtual Private Cloud (VPC) and subnet
+1. Provision Intel bare metal servers
+1. Create the network interfaces
+1. Ready your operating system
+1. Define the storage layout for your Bare Metal servers
 
 For more information about these steps, see [Deploying your Bare Metal infrastructure](/docs/sap?topic=sap-bm-vpc-set-up-infrastructure).
 
 ## Install the required software
 {: #deploy-reqd-sw}
 
-After the infrastructure has been deployed, install the software that is required to support the {{site.data.keyword.IBM_notm}} Db2 and SAP Pacemaker clusters.
+After the infrastructure is deployed, install the software that is required to support the {{site.data.keyword.IBM_notm}} Db2 and SAP Pacemaker clusters.
 
-* Installing SAP and IBM Db2 software
-* Installing the Pacemaker software in the SAP cluster
-* Installing the Pacemaker software in the IBM Db2 cluster
+* Install SAP and IBM Db2 software
+* Install the Pacemaker software in the SAP cluster
+* Install the Pacemaker software in the IBM Db2 cluster
 
 ### Installing the SAP and IBM Db2 software
 {: #deploy-db2-pm}
@@ -127,46 +127,46 @@ The following links describe the installation of the IBM Db2 Pacemaker software:
 
 The {{site.data.keyword.IBM_notm}} Db2 Pacemaker configuration requires two steps:
 
-1. Setting up a Virtual IP address with an Application Load Balancer
-1. Configuring Db2 HADR Pacemaker cluster fencing or Qdevice on {{site.data.keyword.cloud_notm}}
+1. Setting up a Virtual IP address with an Application Load Balancer.
+1. Configuring Db2 HADR Pacemaker cluster fencing or Qdevice on {{site.data.keyword.cloud_notm}}.
 
-### Virtual IP address setup
+### Setting up a Virtual IP address setup
 {: #deploy-db2-vip}
 
-A Virtual IP address (VIP) is used for communication between the Db2 database and the application. This is routed by the {{site.data.keyword.cloud_notm}} Application Load Balancer (ALB). The Application Load Balancer service with failover support routes the client traffic to a given database in a Db2 HADR cluster.
+A Virtual IP address (VIP) is used for communication between the Db2 database and the application and is routed by the {{site.data.keyword.cloud_notm}} application load balancer (ALB). The application load balancer service with failover support routes the client traffic to a given database in a Db2 HADR cluster.
 
-{{site.data.keyword.cloud_notm}} Application Load Balancers use front end listeners, security groups, backend pools, and health checks to route the traffic. For more information, see [About application load balancers](/docs/vpc?topic=vpc-load-balancers-about).
+{{site.data.keyword.cloud_notm}} application load balancers use front end listeners, security groups, backend pools, and health checks to route the traffic. For more information, see [About application load balancers](/docs/vpc?topic=vpc-load-balancers-about).
 
-For more information on the steps to configure this Virtual IP address, see [Setting up Virtual IP address for two-node Db2 HADR Pacemaker cluster with Application Load Balancer on {{site.data.keyword.cloud_notm}}](https://www.ibm.com/support/pages/node/7184308){:external}.
+For more information on the steps to configure this Virtual IP address, see [Setting up Virtual IP address for two-node Db2 HADR Pacemaker cluster with application load balancer on {{site.data.keyword.cloud_notm}}](https://www.ibm.com/support/pages/node/7184308){:external}.
 
 ### Pacemaker fencing agent setup
 {: #deploy-db2-fence}
 
 Pacemaker provides different mechanisms to handle node failures and in particular the 'split brain' scenario in a two-node cluster. One mechanism is to use a third **quorum node** within the Pacemaker cluster to arbitrate when one of the HADR cluster nodes fails.
 
-On {{site.data.keyword.cloud_notm}}, while you can configure a quorum device on a third host, there is an alternative that uses a **fencing agent**. The fencing agent interacts with the {{site.data.keyword.cloud_notm}} infrastructure to start, stop, monitor and/or reboot the virtual machines. The advantage of configuring a two-node HADR Pacemaker cluster with fencing is that it removes the requirement of a third host for the quorum device, thus reducing ongoing cost. 
+On {{site.data.keyword.cloud_notm}}, while you can configure a quorum device on a third host, there is an alternative that uses a **fencing agent**. The fencing agent interacts with the {{site.data.keyword.cloud_notm}} infrastructure to start, stop, monitor and/or restart the virtual machines. The advantage of configuring a two-node HADR Pacemaker cluster with fencing is that it removes the requirement of a third host for the quorum device, thus reducing ongoing cost. 
 
 For more information on configuring Pacemaker with the *fence_ibm_vpc* fencing agent, see [Setting up two-node Db2 HADR Pacemaker cluster with fencing on {{site.data.keyword.cloud_notm}}](https://www.ibm.com/support/pages/node/7228864){: external}
 
 ## Deploy SAP
 {: #deploy-sap}
 
-{{site.data.keyword.IBM_notm}} provides several templates with scripts to deploy different SAP NetWeaver and IBM Db2 architectures.  These use Terraform or Terraform and Ansible to deploy SAP. For more information, see [SAP Terraform deployment templates](/docs/sap?topic=sap-terraform-templates).
+{{site.data.keyword.IBM_notm}} provides several templates with scripts to deploy different SAP NetWeaver and IBM Db2 architectures. Both use Terraform or Terraform and Ansible to deploy SAP. For more information, see [SAP Terraform deployment templates](/docs/sap?topic=sap-terraform-templates).
 
-## Testing
+## Testing the environment
 {: #deploy-testing}
 
-The final step is to test the environment to ensure that failures are handled as expected by the Pacemaker cluster. The tests depend on the configuration that has been implemented and might include:
+The final step is to test the environment to help ensure that failures are handled as expected by the Pacemaker cluster. The tests depend on the configuration that has been implemented and might include:
 
 1. Manually moving the SAP ABAP Central Services (ASCS) instance
 1. Manually moving the SAP ERS instance
 1. Testing failure of the SAP ASCS instance
 1. Testing failure of the SAP ERS instance
-1. Manually moving the Db2 Primary database instance
-1. Manually moving the Db2 Secondary database instance
+1. Manually moving the Db2 primary database instance
+1. Manually moving the Db2 secondary database instance
 1. Testing failure of the Db2 primary database instance
-1. Testing failure of the Db2 Secondary database instance
+1. Testing failure of the Db2 secondary database instance
 1. Failure of SAP ASCS instance due to node crash
 1. Failure of SAP ERS instance due to node crash
 1. Failure of Db2 primary database instance due to node crash
-1. Failure of Db2 Secondary database instance due to node crash
+1. Failure of Db2 secondary database instance due to node crash
