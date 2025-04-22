@@ -15,7 +15,7 @@ subcollection: pattern-db2-sap-vpc
 # Deploying highly available SAP with Db2
 {: #deploy-db2-sap}
 
-The highly available SAP with Db2 deployment process requires specific deployment and configuration steps.
+The Highly available SAP with Db2 on IBM Cloud VPC solution requires manual configuration of a number of non-{{site.data.keyword.cloud_notm}} software components. This deployment process requires a number of specific deployment and configuration steps as described:
 
 1. Deploy {{site.data.keyword.cloud_notm}} infrastructure resources
 1. Install the required software

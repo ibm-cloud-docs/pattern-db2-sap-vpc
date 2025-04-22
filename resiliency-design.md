@@ -20,34 +20,41 @@ The highly available SAP with {{site.data.keyword.IBM_notm}} Db2 on {{site.data.
 ## {{site.data.keyword.IBM_notm}} Db2
 {: #ibm-cloud-db2-resiliency}
 
-    * Two IBM Db2 cluster nodes are connected to one another by the IBM Cloud network. These nodes are Virtual System Instances (VSIs) running within a Virtual Private Cloud (VPC).
+Resilience for the {{site.data.keyword.IBM_notm}} Db2 database is delivered using the following key components:
 
-    * Separate disk storage attached to each of the VSIs that contains the Db2 database.  The Db2 HADR does not operate with shared storage.
+ * Two IBM Db2 cluster nodes are connected to one another by the IBM Cloud network. These nodes are Virtual System Instances (VSIs) running within a Virtual Private Cloud (VPC).
 
-        Databases are key repositories of business information requiring them to be both performant and highly available. The Db2 databases are made highly available using Db2 high availability and disaster recovery (HADR).  This is a data replication feature. With HADR there two separate Db2 database servers: a primary and a standby with all clients connected to the primary server. Database transactions are transferred to the second (standby) database server over the network. The standby server updates its local database using these transactions to be kept synchronised with the primary server.  In the event of a failure of the primary database server, the standby database server takes over the workload.  
+* Separate disk storage attached to each of the VSIs that contains the Db2 database.  The Db2 HADR does not operate with shared storage.
 
-    * A floating, virtual IP address that allows clients to connect to the Db2 database service no matter which cluster node it is running on.
+    Databases are key repositories of business information requiring them to be both performant and highly available. The Db2 databases are made highly available using Db2 high availability and disaster recovery (HADR).  This is a data replication feature. With HADR there two separate Db2 database servers: a primary and a standby with all clients connected to the primary server. Database transactions are transferred to the second (standby) database server over the network. The standby server updates its local database using these transactions to be kept synchronised with the primary server.  In the event of a failure of the primary database server, the standby database server takes over the workload.  
 
-    * Use of a Qdevice Host or cloud fencing agent to avoid split-brain scenarios when the cluster nodes cannot communicate with one another.
+* A floating, virtual IP address that allows clients to connect to the Db2 database service no matter which cluster node it is running on.
 
-    * Active-passive failover and failback of resources from one cluster node to the other if the active host fails.
+ * Use of a Qdevice Host or cloud fencing agent to avoid split-brain scenarios when the cluster nodes cannot communicate with one another.
 
-## {{site.data.keyword.IBM_notm}} for SAP 
+* Active-passive failover and failback of resources from one cluster node to the other if the active host fails.
+
+## SAP 
 {: #sap-resiliency} 
 
-    * Two SAP cluster nodes connected to one another by the IBM Cloud network. These nodes are Virtual System Instances (VSIs) running within a Virtual Private Cloud (VPC).
+Resilience for the SAP application layer of the solution is delivered using the following key components:
 
-    * {{site.data.keyword.IBM_notm}} VPC File Storage attached to each of the VSIs that run the SAP components. This shared filesystem is mounted using the NFS protocol to facilitate sharing of data between the SAP components.
+* Two SAP cluster nodes connected to one another by the IBM Cloud network. These nodes are Virtual System Instances (VSIs) running within a Virtual Private Cloud (VPC).
 
-        The two SAP servers communicate by using an Enqueue Server. The Enqueue Server on the primary nodes transmits replication data to the Enqueue Replication Server on the standby system. This stores the data in a shadow enqueue table residing in shared memory. In case the primary Enqueue Server fails, the shadow enqueue table on the Enqueue Replication Server is used to rebuild the tables and data structures for the recovered Enqueue Server that is started on the same node. The Enqueue Replication Server stops after transferring the data to the recovered Enqueue Server.
+ * {{site.data.keyword.IBM_notm}} VPC File Storage attached to each of the VSIs that run the SAP components. This shared filesystem is mounted using the NFS protocol to facilitate sharing of data between the SAP components.
 
-    * A floating, virtual IP address that allows clients to connect to the SAP service(s) no matter which cluster node it is running on.
+    The two SAP servers communicate by using an Enqueue Server. The Enqueue Server on the primary nodes transmits replication data to the Enqueue Replication Server on the standby system. This stores the data in a shadow enqueue table residing in shared memory. In case the primary Enqueue Server fails, the shadow enqueue table on the Enqueue Replication Server is used to rebuild the tables and data structures for the recovered Enqueue Server that is started on the same node. The Enqueue Replication Server stops after transferring the data to the recovered Enqueue Server.
 
-    * Use of a cloud fencing agent to avoid split-brain scenarios when the cluster nodes cannot communicate with one another.
+* A floating, virtual IP address that allows clients to connect to the SAP service(s) no matter which cluster node it is running on.
 
-    * Active-passive failover and failback of resources from one cluster node to the other if the active host fails.
+* Use of a cloud fencing agent to avoid split-brain scenarios when the cluster nodes cannot communicate with one another.
 
-Failure detection and automation of the recovery processing requires a cluster manager such as [Pacemaker](https://clusterlabs.org/projects/pacemaker/){: external}. Pacemaker monitors the two servers and initiates the failover to the standby server when required. There are two Pacemaker clusters, one to support the {{site.data.keyword.IBM_notm}} Db2 database cluster and one to support the SAP cluster.
+* Active-passive failover and failback of resources from one cluster node to the other if the active host fails.
+
+    Failure detection and automation of the recovery processing requires a cluster manager such as [Pacemaker](https://clusterlabs.org/projects/pacemaker/){: external}. Pacemaker monitors the two servers and initiates the failover to the standby server when required. There are two Pacemaker clusters, one to support the {{site.data.keyword.IBM_notm}} Db2 database cluster and one to support the SAP cluster.
+
+## Single zone versus Multizone choices
+{: #az-resiliency} 
 
 The highly available SAP with {{site.data.keyword.IBM_notm}} Db2 on {{site.data.keyword.Bluemix_notm}} VPC pattern can be deployed within a single IBM Cloud region. It can be deployed with all of the cluster nodes within a single availability zone (AZ) as shown in the following diagram:
 
@@ -57,6 +64,9 @@ For protection against the unlikely failure of an availability zone, there is al
 
 ![Dual AZ resilience approach for Highly Available SAP with Db2 on IBM Cloud VPC](/images/sap-db2-vpc-HLA-2AZ+sap.drawio.svg "Dual AZ resilience approach for Highly Available SAP with Db2 on IBM Cloud VPCs"){: caption="Dual AZ resilience approach for Highly Available SAP with Db2 on IBM Cloud VPC" caption-side="bottom"}
 
-Solutions needing to also provide disaster recovery are recommended to review this documentation:
+## Disaster recovery
+{: #dr-resiliency} 
+
+High availability is different to disaster recovery though many aspects are common across both. Solutions needing to also provide disaster recovery are recommended to review this documentation:
 
 [Planning Disaster Recovery for SAP solutions on IBM Cloud](/docs/sap?topic=sap-disaster-recovery-design-considerations-overview).
