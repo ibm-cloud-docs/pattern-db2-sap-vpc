@@ -33,7 +33,7 @@ If you do not yet have an {{site.data.keyword.Bluemix}} SSH key and VPC deployed
 
 Security is a significant concern when running business-critical applications in a cloud environment. To secure your connection to your {{site.data.keyword.IBM_notm}} Virtual Servers, a public SSH key can be uploaded to your account, per region. These public keys are deployed to your virtual servers instances to allow access to the servers.
 
-Before you continue, create an SSH public key that you can upload later to the region of your choice when you are creating the virtual server instance. Follow the steps that are documented at [Getting started with SSH keys](/docs/vpc?topic=vpc-ssh-keys&interface=ui).
+Before you continue, create an SSH public key that you can upload later to the region of your choice when you are creating the virtual server instance. Follow the steps that are documented at [Getting started with SSH keys](/docs/vpc?topic=vpc-ssh-keys).
 
 You use security groups to restrict access to and from IP ranges, protocols, and ports. Security groups aren't within the scope of this guidance, and the default security group that is deployed with your sample VPC can suffice. However, you might have to add other ports for exceptions to the access restrictions, such as, the SAP Software Provisioning Manager and for the ports that are being used by your SAP NetWeaver based application.
 
@@ -48,7 +48,7 @@ Cloud resources are deployed in a global region within a VPC. Use the following 
 1. Select the **Geography** and **Region** your VPC will be deployed in from the dropdown menus.
 1. Enter a unique Name for the VPC, for example, *sap-db2-cluster*.
 1. Keep the default Resource group unless you wish to create a new one. Use resource groups to organize your account resources for access control and billing purposes. For more information, see [Best practices for organizing resources in a resource group](/docs/account?topic=account-account_setup).
-1. Optional: Tags. Enter tags to help you organize and find your resources. You can add more tags later. For more information, see [Working with tags](docs/account?topic=account-tag&interface=ui).
+1. Optional: Tags. Enter tags to help you organize and find your resources. You can add more tags later. For more information, see [Working with tags](/docs/account?topic=account-tag).
 1. Keep the Default security group settings, which allow inbound SSH and ping traffic to virtual server instances in this VPC.
 
 ## Deploy {{site.data.keyword.cloud_notm}} infrastructure resources
