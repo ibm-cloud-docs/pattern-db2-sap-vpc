@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-04-16"
+lastupdated: "2025-04-22"
 
 subcollection: pattern-db2-sap-vpc
 
@@ -47,7 +47,7 @@ The highly available SAP with {{site.data.keyword.IBM_notm}} Db2 on {{site.data.
 
     * Active-passive failover and failback of resources from one cluster node to the other if the active host fails.
 
-Failure detection and automation of the recovery processing requires a cluster manager such as [Pacemaker](https://clusterlabs.org/projects/pacemaker/){:external}. Pacemaker monitors the two servers and initiates the failover to the standby server when required. There are two Pacemaker clusters, one to support the {{site.data.keyword.IBM_notm}} Db2 database cluster and one to support the SAP cluster.
+Failure detection and automation of the recovery processing requires a cluster manager such as [Pacemaker](https://clusterlabs.org/projects/pacemaker/){: external}. Pacemaker monitors the two servers and initiates the failover to the standby server when required. There are two Pacemaker clusters, one to support the {{site.data.keyword.IBM_notm}} Db2 database cluster and one to support the SAP cluster.
 
 The highly available SAP with {{site.data.keyword.IBM_notm}} Db2 on {{site.data.keyword.Bluemix_notm}} VPC pattern can be deployed within a single IBM Cloud region. It can be deployed with all of the cluster nodes within a single availability zone (AZ) as shown in the following diagram:
 
@@ -57,6 +57,6 @@ For protection against the unlikely failure of an availability zone, there is al
 
 ![Dual AZ resilience approach for Highly Available SAP with Db2 on IBM Cloud VPC](/images/sap-db2-vpc-HLA-2AZ+sap.drawio.svg "Dual AZ resilience approach for Highly Available SAP with Db2 on IBM Cloud VPCs"){: caption="Dual AZ resilience approach for Highly Available SAP with Db2 on IBM Cloud VPC" caption-side="bottom"}
 
-Solutions needing to also provide disaster recovery are recommended to review the documentation provided here:
+Solutions needing to also provide disaster recovery are recommended to review this documentation:
 
 [Planning Disaster Recovery for SAP solutions on IBM Cloud](/docs/sap?topic=sap-disaster-recovery-design-considerations-overview).

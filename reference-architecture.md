@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-04-15"
+lastupdated: "2025-04-22"
 
 keywords: SAP, Db2, Pacemaker, SUSE, SLES, SUSE Linux, High Availability, cluster
 
@@ -69,7 +69,7 @@ This diagram shows how the various components of the pattern deliver high availa
 
 * Two key SAP components in the SAP instance are available, the ABAP SAP Central Services (ASCS) and Enqueue Replication Server (ERS). Just as Db2 uses its HADR component to replicate data between the servers in its Pacemaker cluster, SAP uses a technique that is called Enqueue Replication to do the same.
 
-* SAP applications also access the SAP Application Server and ASCS through a Virtual IP address that can move when failures occur. Pacemaker manages the movement of the virtual IPs for both ASCS and ERS as required.
+* SAP applications also access the SAP Application Server and ASCS through a Virtual IP address that can move between systems when failures occur. Pacemaker manages the movement of the virtual IPs for both ASCS and ERS as required.
 
 Review the design considerations and architecture decisions for the following aspects and domains:
 
@@ -97,7 +97,7 @@ Other solutions from the open source community or from other commercial organiza
 
 The pattern uses two key storage options. {{site.data.keyword.Bluemix_notm}} provides VPC File Storage. This can be used to provide a shared file system that is accessed by the SAP Application Server nodes within the Pacemaker cluster. 
 
-Block storage for the database instances, both primary and secondary, is delivered through {{site.data.keyword.bm_is_full}} if VSIs are used as database servers. If the decision is made to use {{site.data.keyword.bm_is_short}}, this storage can be provided by solid-state drives within the physical server. This offers faster performance than VPC Block Storage that is accessed via the network.
+Block storage for the database instances, both primary and secondary, is delivered through {{site.data.keyword.bm_is_full}} if VSIs are used as database servers. If the decision is made to use {{site.data.keyword.bm_is_short}}, this storage can be provided by solid-state drives within the physical server. This offers faster performance than VPC Block Storage that is accessed across the network.
 
 #### Application Server nodes
 {: #appsvr-nodes}
@@ -144,5 +144,5 @@ The following table outlines the products or services that are used in the archi
 | Resiliency | [Pacemaker](/https://clusterlabs.org/projects/pacemaker) | The Pacemaker software manages failures of application or database server nodes by managing failover to a surviving cluster node (VSI or Bare Metal) |
 | Service Management | [IBM Cloud Monitoring](/docs/monitoring?topic=monitoring-about-monitor) | Operational monitoring |
 |  | [IBM Cloud Logs](/docs/cloud-logs) | For all {{site.data.keyword.Bluemix_notm}} related Logs |
-|  | [Event Routing](/docs/cloud-logs) | For all {{site.data.keyword.Bluemix_notm}} events  |
+|  | [Event Routing](/docs/cloud-logs?topic=cloud-logs-migration-tutorial-at-option3&q=event+routing&tags=cloud-logs&offset=10#migration-tutorial-at-option3-step2) | For all {{site.data.keyword.Bluemix_notm}} events  |
 {: caption="Components" caption-side="bottom"}
