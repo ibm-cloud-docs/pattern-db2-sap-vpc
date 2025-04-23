@@ -15,14 +15,14 @@ keywords: resilience, high avalability, disaster recovery, Pacemaker, cluster, p
 # Resiliency design
 {: #resiliency-design}
 
-The highly available SAP with {{site.data.keyword.IBM_notm}} Db2 on {{site.data.keyword.Bluemix}} VPC pattern delivers increased resilience over single server deployments of either IBM Db2 or SAP. The Virtual System Instances (VSIs) or bare metal servers are clustered together to avoid the host being a single point of failure. This pattern delivers a solution with {{site.data.keyword.IBM_notm}} Db2 and SAP properties.
+The highly available SAP with {{site.data.keyword.IBM_notm}} Db2 on {{site.data.keyword.Bluemix}} VPC pattern delivers increased resilience over single server deployments of either IBM Db2 or SAP. The Virtual Server Instances (VSIs) or bare metal servers are clustered together to avoid the host being a single point of failure. This pattern delivers a solution with {{site.data.keyword.IBM_notm}} Db2 and SAP properties.
 
 ## {{site.data.keyword.IBM_notm}} Db2
 {: #ibm-cloud-db2-resiliency}
 
 Resilience for the {{site.data.keyword.IBM_notm}} Db2 database is delivered by using the following key components:
 
- * Two {{site.data.keyword.IBM_notm}} Db2 cluster nodes are connected to one another by the {{site.data.keyword.Bluemix_notm}} network. These nodes are Virtual System Instances (VSIs) running within a Virtual Private Cloud (VPC).
+ * Two {{site.data.keyword.IBM_notm}} Db2 cluster nodes are connected to one another by the {{site.data.keyword.Bluemix_notm}} network. These nodes are Virtual Server Instances (VSIs) running within a Virtual Private Cloud (VPC).
 
 * Separate disk storage attached to each of the VSIs that contains the Db2 database. The Db2 HADR does not operate with shared storage.
 
@@ -39,7 +39,7 @@ Resilience for the {{site.data.keyword.IBM_notm}} Db2 database is delivered by u
 
 Resilience for the SAP application layer of the solution is delivered by using the following key components:
 
-* Two SAP cluster nodes connected to one another by the {{site.data.keyword.Bluemix_notm}} network. These nodes are Virtual System Instances (VSIs) running within a Virtual Private Cloud (VPC).
+* Two SAP cluster nodes connected to one another by the {{site.data.keyword.Bluemix_notm}} network. These nodes are Virtual Server Instances (VSIs) running within a Virtual Private Cloud (VPC).
 
  * {{site.data.keyword.IBM_notm}} VPC File Storage attached to each of the VSIs that run the SAP components. This shared file system is mounted by using the Network File System (NFS) protocol to facilitate sharing of data between the SAP components.
 

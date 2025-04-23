@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-04-22"
+lastupdated: "2025-04-23"
 
 keywords:
 
@@ -54,7 +54,7 @@ Cloud resources are deployed in a global region within a VPC. Use the following 
 ## Deploy {{site.data.keyword.cloud_notm}} infrastructure resources
 {: #deploy-cloud-infra}
 
-The first step is to deploy the infrastructure, Virtual System Instances (VSIs) or Bare Metal servers to support the {{site.data.keyword.IBM_notm}} Db2 and SAP Pacemaker clusters.
+The first step is to deploy the infrastructure, Virtual Server Instances (VSIs) or Bare Metal servers to support the {{site.data.keyword.IBM_notm}} Db2 and SAP Pacemaker clusters.
 
 ### Installing Virtual Server infrastructure
 {: #deploy-cloud-infra-vsi}
