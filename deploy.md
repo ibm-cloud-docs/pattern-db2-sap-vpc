@@ -15,7 +15,7 @@ subcollection: pattern-db2-sap-vpc
 # Deploying highly available SAP with Db2
 {: #deploy-db2-sap}
 
-The highly available SAP with Db2 on IBM Cloud VPC solution requires manual configuration of various non-{{site.data.keyword.cloud_notm}} software components. This deployment process requires various specific deployment and configuration steps as described:
+The highly available SAP with Db2 on {{site.data.keyword.Bluemix_notm}} VPC solution requires manual configuration of various non-{{site.data.keyword.cloud_notm}} software components. This deployment process requires various specific deployment and configuration steps as described:
 
 1. Deploy {{site.data.keyword.cloud_notm}} infrastructure resources
 1. Install the required software
@@ -37,12 +37,12 @@ Before you continue, create an SSH public key that you can upload later to the r
 
 You use security groups to restrict access to and from IP ranges, protocols, and ports. Security groups aren't within the scope of this guidance, and the default security group that is deployed with your sample VPC can suffice. However, you might have to add other ports for exceptions to the access restrictions, such as, the SAP Software Provisioning Manager and for the ports that are being used by your SAP NetWeaver-based application.
 
-### Create an IBM Cloud VPC
+### Create an {{site.data.keyword.Bluemix_notm}} VPC
 {: #deploy-before-start-vpc}
 
 Cloud resources are deployed in a global region within a VPC. Use the following steps to create a VPC:
 
-1. Log in to the IBM Cloud console with your unique credentials.
+1. Log in to the {{site.data.keyword.Bluemix_notm}} console with your unique credentials.
 1. Go to [Virtual Private Clouds](https://cloud.ibm.com/infrastructure/network/vpcs) {: external}.
 1. Click **Create**.
 1. Select the **Geography** and **Region** where your VPC will be deployed.
@@ -87,11 +87,11 @@ For more information about these steps, see [Deploying your Bare Metal infrastru
 
 After the infrastructure is deployed, install the software that is required to support the {{site.data.keyword.IBM_notm}} Db2 and SAP Pacemaker clusters.
 
-* Install SAP and IBM Db2 software
+* Install SAP and {{site.data.keyword.IBM_notm}} Db2 software
 * Install the Pacemaker software in the SAP cluster
-* Install the Pacemaker software in the IBM Db2 cluster
+* Install the Pacemaker software in the {{site.data.keyword.IBM_notm}} Db2 cluster
 
-### Installing the SAP and IBM Db2 software
+### Installing the SAP and {{site.data.keyword.IBM_notm}} Db2 software
 {: #deploy-db2-pm}
 
 {{site.data.keyword.cloud_notm}} provides a fully managed Db2 service by using the [catalog](/catalog/services/db2){: external}. The pattern doesn't use this cloud service and requires Db2 to be manually installed. {: important}
@@ -111,15 +111,15 @@ SAP uses the Pacemaker software that is provided by the Linux distribution that 
 * [Installing Pacemaker on Red Hat Enterprise Linux](https://www.redhat.com/en/blog/rhel-pacemaker-cluster){: external}
 * [Installing Pacemaker on SUSE Linux Enterprise Server](https://documentation.suse.com/sle-ha/12-SP5/html/SLE-HA-all/art-ha-install-quick.html){: external}
 
-### Installing the Pacemaker software in the IBM Db2 cluster
+### Installing the Pacemaker software in the {{site.data.keyword.IBM_notm}} Db2 cluster
 {: #deploy-db2-pm-install}
 
 {{site.data.keyword.IBM_notm}} Db2 provides its own Pacemaker cluster software package that is intended for use with Db2. This must be used instead of the Pacemaker software that is provided by the Linux distribution. {: important}
 
-The following links describe the installation of the IBM Db2 Pacemaker software:
+The following links describe the installation of the {{site.data.keyword.IBM_notm}} Db2 Pacemaker software:
 
 * [Installing the Pacemaker cluster software stack](https://www.ibm.com/docs/en/db2/12.1?topic=manager-installing-pacemaker-cluster){: external}
-* [Installing Pacemaker with IBM Db2 SAP Help Portal](https://help.sap.com/docs/DB6/e3eefec5d20740f4872652a475457348/f725ea789c4043e5bee3d0fafd07bc9e.html){: external}
+* [Installing Pacemaker with {{site.data.keyword.IBM_notm}} Db2 SAP Help Portal](https://help.sap.com/docs/DB6/e3eefec5d20740f4872652a475457348/f725ea789c4043e5bee3d0fafd07bc9e.html){: external}
 
 
 ## Configure Db2 Pacemaker
@@ -151,7 +151,7 @@ For more information on configuring Pacemaker with the *fence_ibm_vpc* fencing a
 ## Deploy SAP
 {: #deploy-sap}
 
-{{site.data.keyword.IBM_notm}} provides several templates with scripts to deploy different SAP NetWeaver and IBM Db2 architectures. Both use Terraform or Terraform and Ansible to deploy SAP. For more information, see [SAP Terraform deployment templates](/docs/sap?topic=sap-terraform-templates).
+{{site.data.keyword.IBM_notm}} provides several templates with scripts to deploy different SAP NetWeaver and {{site.data.keyword.IBM_notm}} Db2 architectures. Both use Terraform or Terraform and Ansible to deploy SAP. For more information, see [SAP Terraform deployment templates](/docs/sap?topic=sap-terraform-templates).
 
 ## Testing the environment
 {: #deploy-testing}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-04-22"
+lastupdated: "2025-04-23"
 
 keywords: SAP, Db2, Pacemaker, SUSE, SLES, SUSE Linux, High Availability, cluster
 
@@ -27,7 +27,7 @@ production: false
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Highly available SAP with Db2 on IBM Cloud VPC
+# Highly available SAP with Db2 on {{site.data.keyword.Bluemix_notm}} VPC
 {: #pattern-db2-sap-vpc}
 {: toc-content-type="reference-architecture"}
 {: toc-industry="FinancialSector, Manufacturing, Retail, Industrials"}
@@ -37,14 +37,14 @@ production: false
 
 Many organizations run SAP applications by using an {{site.data.keyword.Bluemix_notm}} Db2 database to support the SAP instance. This pattern describes a highly available implementation of both SAP and Db2 to deliver a resilient solution to meet an organization's business needs.
 
-SAP systems are often mission-critical for the organizations that use them. Providing a highly available SAP Application Server offers minimal benefit unless the underlying database - IBM Db2 in this case - is also made highly available. The architecture for this pattern provides a highly available database layer, which underpins a highly available application server layer running within {{site.data.keyword.Bluemix}} Virtual Private Cloud.
+SAP systems are often mission-critical for the organizations that use them. Providing a highly available SAP Application Server offers minimal benefit unless the underlying database - {{site.data.keyword.IBM_notm}} Db2 in this case - is also made highly available. The architecture for this pattern provides a highly available database layer, which underpins a highly available application server layer running within {{site.data.keyword.Bluemix}} Virtual Private Cloud.
 
 ## Architecture diagram
 {: #architecture-diagram}
 
 The following diagram shows the reference architecture for this pattern:
 
-![Architecture diagram for the highly available SAP with Db2 on IBM Cloud VPC pattern](/images/sap-db2-vpc-detailedHLA.drawio.svg "Architecture diagram for the highly available SAP with Db2 on IBM Cloud VPC pattern"){: caption="Architecture diagram for the highly available SAP with Db2 on IBM Cloud VPC pattern" caption-side="bottom"}
+![Architecture diagram for the highly available SAP with Db2 on {{site.data.keyword.Bluemix_notm}} VPC pattern](/images/sap-db2-vpc-detailedHLA.drawio.svg "Architecture diagram for the highly available SAP with Db2 on {{site.data.keyword.Bluemix_notm}} VPC pattern"){: caption="Architecture diagram for the highly available SAP with Db2 on  Cloud VPC pattern" caption-side="bottom"}
 
 Users access the {{site.data.keyword.Bluemix}} environment by using a Virtual Private Network (VP) across the Internet or a private Direct Link connection.
 
@@ -59,7 +59,7 @@ The SAP application server instances run in a separate Pacemaker-managed cluster
 
 The following diagram shows the infrastructure and software stack for the solution:
 
-![Highly available SAP with Db2 on IBM Cloud VPC stack diagram.](images/sap+db2-stack.drawio.svg "Highly available SAP with Db2 on IBM Cloud VPC stack diagram"){: caption="Highly available SAP with Db2 on IBM Cloud VPC stack diagram" caption-side="bottom"}
+![Highly available SAP with Db2 on {{site.data.keyword.Bluemix_notm}} VPC stack diagram.](images/sap+db2-stack.drawio.svg "Highly available SAP with Db2 on {{site.data.keyword.Bluemix_notm}} VPC stack diagram"){: caption="Highly available SAP with Db2 on {{site.data.keyword.Bluemix_notm}} VPC stack diagram" caption-side="bottom"}
 
 This diagram shows how the various components of the pattern deliver high availability.
 
@@ -142,7 +142,7 @@ The following table outlines the products or services that are used in the archi
 |  | [Key protect](/docs/key-protect?topic=key-protect-about) or [Hyper Protect Crypto Services](/docs/hs-crypto?topic=hs-crypto-get-started) | Hardware security module (HSM) and Key Management Service |
 |  | [Secrets Manager](/docs/secrets-manager?topic=secrets-manager-getting-started) | Certificate and secrets management |
 | Resiliency | [Pacemaker](/https://clusterlabs.org/projects/pacemaker) | The Pacemaker software manages failures of application or database server nodes by managing failover to a surviving cluster node (VSI or bare metal) |
-| Service Management | [IBM Cloud monitoring](/docs/monitoring?topic=monitoring-about-monitor) | Operational monitoring |
-|  | [IBM Cloud Logs](/docs/cloud-logs) | For all {{site.data.keyword.Bluemix_notm}} related Logs |
+| Service Management | [{{site.data.keyword.Bluemix_notm}} monitoring](/docs/monitoring?topic=monitoring-about-monitor) | Operational monitoring |
+|  | [{{site.data.keyword.Bluemix_notm}} Logs](/docs/cloud-logs) | For all {{site.data.keyword.Bluemix_notm}} related Logs |
 |  | [Event Routing](/docs/cloud-logs?topic=cloud-logs-migration-tutorial-at-option3&q=event+routing&tags=cloud-logs&offset=10#migration-tutorial-at-option3-step2) | For all {{site.data.keyword.Bluemix_notm}} events  |
 {: caption="Components" caption-side="bottom"}

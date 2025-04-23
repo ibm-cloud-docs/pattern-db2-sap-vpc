@@ -15,7 +15,7 @@ keywords: resilience, high avalability, disaster recovery, Pacemaker, cluster, p
 # Resiliency design
 {: #resiliency-design}
 
-The highly available SAP with {{site.data.keyword.IBM_notm}} Db2 on {{site.data.keyword.Bluemix}} VPC pattern delivers increased resilience over single server deployments of either IBM Db2 or SAP. The Virtual Server Instances (VSIs) or bare metal servers are clustered together to avoid the host being a single point of failure. This pattern delivers a solution with {{site.data.keyword.IBM_notm}} Db2 and SAP properties.
+The highly available SAP with {{site.data.keyword.IBM_notm}} Db2 on {{site.data.keyword.Bluemix}} VPC pattern delivers increased resilience over single server deployments of either {{site.data.keyword.IBM_notm}} Db2 or SAP. The Virtual Server Instances (VSIs) or bare metal servers are clustered together to avoid the host being a single point of failure. This pattern delivers a solution with {{site.data.keyword.IBM_notm}} Db2 and SAP properties.
 
 ## {{site.data.keyword.IBM_notm}} Db2
 {: #ibm-cloud-db2-resiliency}
@@ -58,13 +58,13 @@ Resilience for the SAP application layer of the solution is delivered by using t
 
 The highly available SAP with {{site.data.keyword.IBM_notm}} Db2 on {{site.data.keyword.Bluemix_notm}} VPC pattern can be deployed within a single {{site.data.keyword.Bluemix_notm}} region. It can be deployed with all of the cluster nodes within a single availability zone (AZ) as shown in the following diagram:
 
-![Single AZ resilience approach for highly available SAP with Db2 on IBM Cloud VPC](/images/sap-db2-vpc-HLA-1AZ+sap.drawio.svg "Single AZ resilience approach for highly available SAP with Db2 on IBM Cloud VPCs"){: caption="Single AZ resilience approach for highly available SAP with Db2 on IBM Cloud VPC" caption-side="bottom"}
+![Single AZ resilience approach for highly available SAP with Db2 on {{site.data.keyword.Bluemix_notm}} VPC](/images/sap-db2-vpc-HLA-1AZ+sap.drawio.svg "Single AZ resilience approach for highly available SAP with Db2 on {{site.data.keyword.Bluemix_notm}} VPCs"){: caption="Single AZ resilience approach for highly available SAP with Db2 on {{site.data.keyword.Bluemix_notm}} VPC" caption-side="bottom"}
 
 For protection against the unlikely failure of an availability zone, there is also the option to split the Pacemaker clusters across two separate availability zones.  This is illustrated in the following diagram:
 
-![Dual AZ resilience approach for highly available SAP with Db2 on IBM Cloud VPC](/images/sap-db2-vpc-HLA-2AZ+sap.drawio.svg "Dual AZ resilience approach for highly available SAP with Db2 on IBM Cloud VPCs"){: caption="Dual AZ resilience approach for highly available SAP with Db2 on IBM Cloud VPC" caption-side="bottom"}
+![Dual AZ resilience approach for highly available SAP with Db2 on {{site.data.keyword.Bluemix_notm}} VPC](/images/sap-db2-vpc-HLA-2AZ+sap.drawio.svg "Dual AZ resilience approach for highly available SAP with Db2 on {{site.data.keyword.Bluemix_notm}}VPCs"){: caption="Dual AZ resilience approach for highly available SAP with Db2 on {{site.data.keyword.Bluemix_notm}} VPC" caption-side="bottom"}
 
 ## Disaster recovery
 {: #dr-resiliency} 
 
-High availability is different than disaster recovery though many aspects are common across both. Solutions that need to provide disaster recovery are recommended to review the following documentation: [Planning disaster recovery for SAP solutions on IBM Cloud](/docs/sap?topic=sap-disaster-recovery-design-considerations-overview).
+High availability is different than disaster recovery though many aspects are common across both. Solutions that need to provide disaster recovery are recommended to review the following documentation: [Planning disaster recovery for SAP solutions on {{site.data.keyword.Bluemix_notm}}](/docs/sap?topic=sap-disaster-recovery-design-considerations-overview).
