@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-04-23"
+lastupdated: "2025-04-25"
 
 keywords: SAP, Db2, Pacemaker, SUSE, SLES, SUSE Linux, High Availability, cluster
 
@@ -42,9 +42,9 @@ SAP systems are often mission-critical for the organizations that use them. Prov
 ## Architecture diagram
 {: #architecture-diagram}
 
-The following diagram shows the reference architecture for this pattern:
+The following diagram shows the high level reference architecture for this pattern:
 
-![Architecture diagram for the highly available SAP with Db2 on {{site.data.keyword.Bluemix_notm}} VPC pattern](/images/sap-db2-vpc-detailedHLA.drawio.svg "Architecture diagram for the highly available SAP with Db2 on {{site.data.keyword.Bluemix_notm}} VPC pattern"){: caption="Architecture diagram for the highly available SAP with Db2 on  Cloud VPC pattern" caption-side="bottom"}
+![High level architecture diagram for the highly available SAP with Db2 on {{site.data.keyword.Bluemix_notm}} VPC pattern](/images/sap-db2-vpc-detailedHLA.drawio.svg "High level architecture diagram for the highly available SAP with Db2 on {{site.data.keyword.Bluemix_notm}} VPC pattern"){: caption="High level architecture diagram for the highly available SAP with Db2 on  Cloud VPC pattern" caption-side="bottom"}
 
 Users access the {{site.data.keyword.Bluemix}} environment by using a Virtual Private Network (VP) across the Internet or a private Direct Link connection.
 

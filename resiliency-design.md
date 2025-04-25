@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-04-23"
+lastupdated: "2025-04-25"
 
 subcollection: pattern-db2-sap-vpc
 
@@ -52,6 +52,18 @@ Resilience for the SAP application layer of the solution is delivered by using t
 * Active-passive failover and failback of resources from one cluster node to the other if the active host fails.
 
     Failure detection and automation of the recovery processing requires a cluster manager such as [Pacemaker](https://clusterlabs.org/projects/pacemaker/){: external}. Pacemaker monitors the two servers and initiates the failover to the standby server when required. There are two Pacemaker clusters, one to support the {{site.data.keyword.IBM_notm}} Db2 database cluster and one to support the SAP cluster.
+
+The high level [reference architecture](/images/sap-db2-vpc-detailedHLA.drawio.svg) for this solution provides a view of SAP as a single entity. In reality, the SAP environment consists of multiple separate components:
+
+- ABAP Central Services (ASCS)
+- Enqueue Replication Server (ERS) for the ASCS
+- Primary Application Server (PAS)
+
+Each of these components needs redundancy to avoid being a single point of failure for the SAP application. The detail of this is illustrated in the following diagram:
+
+![SAP resilience approach for individual SAP components](/images/sap-ha-scenario.drawio.svg "SAP resilience approach for individual SAP components"){: caption="SAP resilience approach for individual SAP components" caption-side="bottom"}
+
+It is recommended to engage an SAP specialist when designing the high availability approach for an SAP environment to ensure that each SAP component is appropriately protected to deliver the SLAs that are required by the business users of SAP.
 
 ## Single zone and multizone choices
 {: #az-resiliency} 
