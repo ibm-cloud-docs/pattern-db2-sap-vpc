@@ -1,0 +1,62 @@
+{
+  "version": 2,
+  "title": "Deploying a highly available SAP environment using IBM Db2 on IBM VPC",
+  "introduction": "This deployment guide provides resources to help deploying a highly available SAP system using Db2 as an underlying database in an IBM Cloud Virtual Private Cloud (VPC) environment.",
+  "section_topics": {
+    "links": [
+      {
+        "title": "Overview",
+        "href": "/docs/pattern-db2-sap-vpc?topic=pattern-db2-sap-vpc-overview"
+      },
+      {
+        "title": "Reference Architecture",
+        "href": "/docs/pattern-db2-sap-vpc?topic=pattern-db2-sap-vpc-pattern-db2-sap-vpc"
+      },
+      {
+        "title": "Planning",
+        "href": "/docs/pattern-db2-sap-vpc?topic=pattern-db2-sap-vpc-compute-design"
+      },
+      {
+        "title": "Deploying",
+        "href": "/docs/pattern-db2-sap-vpc?topic=pattern-db2-sap-vpc-deploy-db2-sap"
+      },
+      {
+        "title": "Reference materials",
+        "href": "/docs/pattern-db2-sap-vpc?topic=pattern-db2-sap-vpc-references"
+      }
+    ]
+  },
+  "section_highlights": [
+    {
+      "title": "Db2 Optimization Techniques for SAP Database Migration to the Cloud",
+      "description": "This IBM Redbook provides in-depth recommendations for the source system database export.",
+      "href": "https://www.redbooks.ibm.com/abstracts/sg248531.html",
+      "type": "redbook",
+      "recommended": true
+    },
+    {
+      "title": "Database Administration Guide for SAP on IBM Db2 for Linux, UNIX, and Windows",
+      "description": "This guide provides information about the administration of IBM Db2 for Linux, UNIX, and Windows in an SAP environment.",
+      "href": "https://help.sap.com/docs/DB6/e3eefec5d20740f4872652a475457348/8f6d6352cafb412e914c58c944a34b4e.html",
+      "type": "article",
+      "recommended": true
+    }
+  ],
+  "section_architectures": [
+    {
+      "title": "Overview of IBM Cloud for SAP",
+      "href": "/docs/sap?topic=sap-overview-sap-offerings-overview",
+      "deployable": false
+    },
+    {
+      "title": "SAP NetWeaver 7.x on UNIX with Db2 on IBM Cloud VPC",
+      "href": "/docs/sap?topic=sap-sap-refarch-nw-db2",
+      "deployable": false
+    },
+    {
+      "title": "SAP NetWeaver 7.x with SAP HANA IBM Cloud VPC",
+      "href": "/docs/sap?topic=sap-sap-refarch-nw-hana",
+      "deployable": false
+    }
+  ]
+}

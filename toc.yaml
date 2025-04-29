@@ -1,0 +1,60 @@
+#  Name your file `toc.yaml`
+#  Make sure you include all nav file coding requirements, as defined in https://test.cloud.ibm.com/docs-internal/writing?topic=writing-code-nav
+#  Anything with a fully qualified URL with `http` or `https` will get an external link icon added to the nav entry
+---
+toc:
+  properties:
+    subcollection: pattern-db2-sap-vpc
+    href: /docs/pattern-db2-sap-vpc
+    path: pattern-db2-sap-vpc
+    audience: solution
+    category: solution_docs
+    content-type: deployment
+    industry: FinancialSector, Manufacturing, Retail, Industrials
+    use-case: Data resiliency, Enterprise resource planning
+    compliance: ISOIEC27001
+    deployable: false
+    description: Deploying highly available SAP and Db2 on IBM Cloud VPC using SUSE Linux
+    label: Highly available SAP with Db2 on IBM Cloud VPC
+  entries:
+  - navgroup:
+      id: overview
+      topics:
+        - overview.md
+  - navgroup:
+      id: architecture
+      topics:
+      - reference-architecture.md
+  - navgroup:
+        id: plan
+        topics:
+        - topicgroup:
+            label: Design considerations
+            topics:
+            - topic: compute-design.md
+              navtitle: Compute
+            - topic: storage-design.md
+              navtitle: Storage
+            - topic: networking-design.md
+              navtitle: Networking
+            - topic: resiliency-design.md
+              navtitle: Resiliency
+        - topicgroup:
+            label: Architecture decisions
+            topics:
+            - include: ../pattern-sap-on-vpc/compute-decisions.md
+              navtitle: Compute
+            - include: ../pattern-sap-on-vpc/storage-decisions.md
+              navtitle: Storage
+            - topic: networking-architecture.md
+              navtitle: Networking
+            - topic: resiliency-architecture.md
+              navtitle: Resiliency
+  - navgroup:
+      id: deploy
+      topics:
+      - deploy.md
+  - navgroup:
+      id: reference
+      topics:
+      - references.md
