@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-04-23"
+lastupdated: "2025-04-29"
 
 keywords:
 
@@ -118,7 +118,7 @@ SAP uses the Pacemaker software that is provided by the Linux distribution that 
 
 The following links describe the installation of the {{site.data.keyword.IBM_notm}} Db2 Pacemaker software:
 
-* [Installing the Pacemaker cluster software stack](https://www.ibm.com/docs/en/db2/12.1?topic=manager-installing-pacemaker-cluster){: external}
+* [Installing the Pacemaker cluster software stack](https://www.ibm.com/docs/en/db2/12.1.0?topic=manager-installing-pacemaker-cluster){: external}
 * [Installing Pacemaker with {{site.data.keyword.IBM_notm}} Db2 SAP Help Portal](https://help.sap.com/docs/DB6/e3eefec5d20740f4872652a475457348/f725ea789c4043e5bee3d0fafd07bc9e.html){: external}
 
 

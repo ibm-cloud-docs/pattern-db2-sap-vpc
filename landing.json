@@ -52,11 +52,6 @@
       "title": "SAP NetWeaver 7.x on UNIX with Db2 on IBM Cloud VPC",
       "href": "/docs/sap?topic=sap-sap-refarch-nw-db2",
       "deployable": false
-    },
-    {
-      "title": "SAP NetWeaver 7.x with SAP HANA IBM Cloud VPC",
-      "href": "/docs/sap?topic=sap-sap-refarch-nw-hana",
-      "deployable": false
     }
   ]
 }
