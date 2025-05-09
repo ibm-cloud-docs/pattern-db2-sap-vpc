@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-04-29"
+lastupdated: "2025-05-08"
 
 keywords: SAP, Db2, Pacemaker, SUSE, SLES, SUSE Linux, High Availability, cluster
 
@@ -144,5 +144,5 @@ The following table outlines the products or services that are used in the archi
 | Resiliency | [Pacemaker](/https://clusterlabs.org/projects/pacemaker) | The Pacemaker software manages failures of application or database server nodes by managing failover to a surviving cluster node (VSI or bare metal) |
 | Service Management | [{{site.data.keyword.Bluemix_notm}} monitoring](/docs/monitoring?topic=monitoring-about-monitor) | Operational monitoring |
 |  | [{{site.data.keyword.Bluemix_notm}} Logs](/docs/cloud-logs) | For all {{site.data.keyword.Bluemix_notm}} related Logs |
-|  | [Event Routing](/docs/cloud-logs?topic=cloud-logs-migration-tutorial-at-option3) | For all {{site.data.keyword.Bluemix_notm}} events  |
+|  | [Event Routing](/docs/atracker) | For all {{site.data.keyword.Bluemix_notm}} events  |
 {: caption="Components" caption-side="bottom"}
