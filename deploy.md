@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-04-29"
+lastupdated: "2025-06-11"
 
 keywords:
 
@@ -43,7 +43,7 @@ You use security groups to restrict access to and from IP ranges, protocols, and
 Cloud resources are deployed in a global region within a VPC. Use the following steps to create a VPC:
 
 1. Log in to the {{site.data.keyword.Bluemix_notm}} console with your unique credentials.
-1. Go to [Virtual Private Clouds](https://cloud.ibm.com/infrastructure/network/vpcs) {: external}.
+1. Go to [Virtual Private Clouds](https://cloud.ibm.com/infrastructure/network/vpcs){: external}.
 1. Click **Create**.
 1. Select the **Geography** and **Region** where your VPC will be deployed.
 1. Enter a unique name for the VPC, for example, *sap-db2-cluster*.
