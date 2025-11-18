@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-04-22"
+lastupdated: "2025-11-18"
 
 subcollection: pattern-db2-sap-vpc
 
@@ -15,7 +15,7 @@ keywords:
 # Architecture decisions for networking
 {: #networking-architecture}
 
-The following table summarizes the networking architectural decisions for SAP running on {{site.data.keyword.cloud_notm}} VPC:
+The following table summarizes the networking architectural decisions for SAP using a Db2 database running on {{site.data.keyword.cloud_notm}} VPC:
 
 | Architecture decision | Requirement | Decision | Rationale |
 | -------------- | -------------- | -------------- | -------------- |

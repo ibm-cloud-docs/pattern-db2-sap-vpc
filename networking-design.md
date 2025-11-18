@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-04-23"
+lastupdated: "2025-11-18"
 
 subcollection: pattern-db2-sap-vpc
 
@@ -15,7 +15,7 @@ keywords: network
 # Network design
 {: #network-design}
 
-All cloud solutions rely on networks to connect the in-cloud solution components as well as network links to connect users and enterprise applications to these in-cloud solutions. The network design needs to support the security, interoperability and performance needs of the highly available SAP with Db2 on {{site.data.keyword.Bluemix_notm}} VPC solution. This topic introduces these network considerations.
+All cloud solutions rely on networks to connect the in-cloud solution components as well as network links to connect users and enterprise applications to these in-cloud solutions. The network design supports the security, interoperability and performance needs of the highly available SAP with Db2 on {{site.data.keyword.Bluemix_notm}} VPC solution. This topic introduces these network considerations.
 
 This pattern is built within an {{site.data.keyword.vpc_full}} environment. Your business and functional requirements determine the SAP solutions that are powered by the SAP NetWeaver Application Server. The requirements determine how your applications are run in the available infrastructure. For more information, see:
 

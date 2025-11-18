@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-05-08"
+lastupdated: "2025-11-18"
 
 keywords: SAP, Db2, Pacemaker, SUSE, SLES, SUSE Linux, High Availability, cluster
 
@@ -35,9 +35,9 @@ production: false
 {: toc-compliance="ISOIEC27001"}
 {: toc-version="1.0"}
 
-Many organizations run SAP applications by using an {{site.data.keyword.Bluemix_notm}} Db2 database to support the SAP instance. This pattern describes a highly available implementation of both SAP and Db2 to deliver a resilient solution to meet an organization's business needs.
+Many organizations run SAP applications using an {{site.data.keyword.Bluemix_notm}} Db2 database to support the SAP instance. This pattern describes a highly available implementation of both SAP and Db2 to deliver a resilient solution to meet an organization's business needs.
 
-SAP systems are often mission-critical for the organizations that use them. Providing a highly available SAP Application Server offers minimal benefit unless the underlying database - {{site.data.keyword.IBM_notm}} Db2 in this case - is also made highly available. The architecture for this pattern provides a highly available database layer, which underpins a highly available application server layer running within {{site.data.keyword.Bluemix}} Virtual Private Cloud.
+SAP systems are often mission-critical for the organizations that use them. Providing a highly available SAP Application Server offers minimal benefit unless the underlying database - {{site.data.keyword.IBM_notm}} Db2 in this case - is also made highly available. The architecture for this pattern provides a highly available database layer, which underpins a highly available SAP application server layer running within {{site.data.keyword.Bluemix}} Virtual Private Cloud.
 
 ## Architecture diagram
 {: #architecture-diagram}
@@ -46,7 +46,7 @@ The following diagram shows the high level reference architecture for this patte
 
 ![High level architecture diagram for the highly available SAP with Db2 on {{site.data.keyword.Bluemix_notm}} VPC pattern](/images/sap-db2-vpc-detailedHLA.drawio.svg "High level architecture diagram for the highly available SAP with Db2 on {{site.data.keyword.Bluemix_notm}} VPC pattern"){: caption="High level architecture diagram for the highly available SAP with Db2 on  Cloud VPC pattern" caption-side="bottom"}
 
-Users access the {{site.data.keyword.Bluemix}} environment by using a Virtual Private Network (VP) across the Internet or a private Direct Link connection.
+Users access the {{site.data.keyword.Bluemix}} environment by using a Virtual Private Network (VPN) across the Internet or a private Direct Link connection.
 
 Administrative access to the environment is recommended by using a bastion host. This access provides a secure access point for systems management activities. Bastion hosts can also provide session logging for audit purposes, allowing all management activities to be securely logged. If an incident or problem occurs, there is a record of what actions were performed that caused the issue.
 

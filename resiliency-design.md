@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-04-25"
+lastupdated: "2025-11-18"
 
 subcollection: pattern-db2-sap-vpc
 
@@ -15,7 +15,7 @@ keywords: resilience, high avalability, disaster recovery, Pacemaker, cluster, p
 # Resiliency design
 {: #resiliency-design}
 
-The highly available SAP with {{site.data.keyword.IBM_notm}} Db2 on {{site.data.keyword.Bluemix}} VPC pattern delivers increased resilience over single server deployments of either {{site.data.keyword.IBM_notm}} Db2 or SAP. The Virtual Server Instances (VSIs) or bare metal servers are clustered together to avoid the host being a single point of failure. This pattern delivers a solution with {{site.data.keyword.IBM_notm}} Db2 and SAP properties.
+The highly available SAP with {{site.data.keyword.IBM_notm}} Db2 on {{site.data.keyword.Bluemix}} VPC pattern delivers increased resilience over single server deployments of either {{site.data.keyword.IBM_notm}} Db2 or SAP. The Virtual Server Instances (VSIs) or bare metal servers are clustered together to avoid the host being a single point of failure. This pattern delivers a resilient solution with {{site.data.keyword.IBM_notm}} Db2 and SAP properties.
 
 ## {{site.data.keyword.IBM_notm}} Db2
 {: #ibm-cloud-db2-resiliency}

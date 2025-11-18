@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-04-23"
+lastupdated: "2025-11-18"
 
 subcollection: pattern-db2-sap-vpc
 
@@ -15,7 +15,7 @@ keywords: storage, disk, database, volume, block storage
 # Storage design
 {: #storage-design}
 
-SAP solutions want to make sure that there is enough available storage to accommodate the existing environment and allow for more data growth for primary, backup and archive storage. You need to choose the appropriate SAP-certified profile to meet primary storage and growth requirements for workloads.
+SAP solutions need to ensure that there is enough available storage to accommodate the existing environment and allow for more data growth for primary, backup and archive storage. You need to choose the appropriate SAP-certified profile to meet primary storage and growth requirements for workloads.
 
 This pattern is built within an {{site.data.keyword.Bluemix_notm}} Virtual Private Cloud (VPC) environment. For more information, see [{{site.data.keyword.Bluemix_notm}} Virtual Private Cloud (VPC) Infrastructure environment introduction](/docs/sap?topic=sap-vpc-env-introduction).
 
