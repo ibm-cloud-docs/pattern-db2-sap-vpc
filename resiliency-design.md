@@ -22,7 +22,7 @@ The highly available SAP with {{site.data.keyword.IBM_notm}} Db2 on {{site.data.
 
 Resilience for the {{site.data.keyword.IBM_notm}} Db2 database is delivered by using the following key components:
 
- * Two {{site.data.keyword.IBM_notm}} Db2 cluster nodes are connected to one another by the {{site.data.keyword.Bluemix_notm}} network. These nodes are Virtual Server Instances (VSIs) running within a Virtual Private Cloud (VPC).
+* Two {{site.data.keyword.IBM_notm}} Db2 cluster nodes are connected to one another by the {{site.data.keyword.Bluemix_notm}} network. These nodes are Virtual Server Instances (VSIs) running within a Virtual Private Cloud (VPC).
 
 * Separate disk storage attached to each of the VSIs that contains the Db2 database. The Db2 HADR does not operate with shared storage.
 
