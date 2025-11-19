@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-04-23"
+lastupdated: "2025-11-18"
 
 subcollection: pattern-db2-sap-vpc
 
@@ -15,7 +15,7 @@ keywords: Intel, virtual machine, VSI, server, host, compute
 # Compute design
 {: #compute-design}
 
-The basis of any cloud solution is the compute resources that run the applications and any supporting services that the application requires. This topic introduces the considerations for the compute resources needed to support the {{site.data.keyword.IBM_notm}} Db2 database layer of the overall solution as well as the compute resources needed to support the SAP application layer.
+The basis of any cloud solution are the compute resources that run the applications and any supporting services that the application requires. This topic introduces the considerations for the compute resources needed to support the {{site.data.keyword.IBM_notm}} Db2 database layer of the overall solution as well as the compute resources needed to support the SAP application layer.
 
 This pattern is built within an {{site.data.keyword.Bluemix_notm}} Virtual Private Cloud (VPC) environment. For more information, see [{{site.data.keyword.Bluemix_notm}} Virtual Private Cloud (VPC) infrastructure environment](/docs/sap?topic=sap-vpc-env-introduction).
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-04-25"
+lastupdated: "2025-11-19"
 
 subcollection: pattern-db2-sap-vpc
 
@@ -15,7 +15,7 @@ keywords: resilience, high avalability, disaster recovery, Pacemaker, cluster, p
 # Resiliency design
 {: #resiliency-design}
 
-The highly available SAP with {{site.data.keyword.IBM_notm}} Db2 on {{site.data.keyword.Bluemix}} VPC pattern delivers increased resilience over single server deployments of either {{site.data.keyword.IBM_notm}} Db2 or SAP. The Virtual Server Instances (VSIs) or bare metal servers are clustered together to avoid the host being a single point of failure. This pattern delivers a solution with {{site.data.keyword.IBM_notm}} Db2 and SAP properties.
+The highly available SAP with {{site.data.keyword.IBM_notm}} Db2 on {{site.data.keyword.Bluemix}} VPC pattern delivers increased resilience over single server deployments of either {{site.data.keyword.IBM_notm}} Db2 or SAP. The Virtual Server Instances (VSIs) or bare metal servers are clustered together to avoid the host being a single point of failure. This pattern delivers a resilient solution with {{site.data.keyword.IBM_notm}} Db2 and SAP properties.
 
 ## {{site.data.keyword.IBM_notm}} Db2
 {: #ibm-cloud-db2-resiliency}
@@ -26,11 +26,11 @@ Resilience for the {{site.data.keyword.IBM_notm}} Db2 database is delivered by u
 
 * Separate disk storage attached to each of the VSIs that contains the Db2 database. The Db2 HADR does not operate with shared storage.
 
-    Databases are key repositories of business information requiring them to be both performant and highly available. The Db2 databases are made highly available using Db2 high availability disaster recovery (HADR). This is a data replication feature. With HADR there are two separate Db2 database servers: a primary and a standby with all clients connected to the primary server. Database transactions are transferred to the second, a standby database server over the network. The standby server updates its local database by using these transactions to be kept synchronized with the primary server. If a failure of the primary database server occurs, the standby database server takes over the workload.  
+Databases are key repositories of business information requiring them to be both performant and highly available. The Db2 databases are made highly available using Db2 high availability disaster recovery (HADR). This is a data replication feature. With HADR there are two separate Db2 database servers: a primary and a standby with all clients connected to the primary server. Database transactions are transferred to the second, a standby database server over the network. The standby server updates its local database by using these transactions to be kept synchronized with the primary server. If a failure of the primary database server occurs, the standby database server takes over the workload.  
 
 * A floating, virtual IP address that allows clients to connect to the Db2 database service no matter which cluster node it's running on.
 
- * Use of a Qdevice host or cloud fencing agent to avoid split-brain scenarios when the cluster nodes can't communicate with one another.
+* Use of a Qdevice host or cloud fencing agent to avoid split-brain scenarios when the cluster nodes can't communicate with one another.
 
 * Active-passive failover and failback of resources from one cluster node to the other if the active host fails.
 
@@ -41,7 +41,7 @@ Resilience for the SAP application layer of the solution is delivered by using t
 
 * Two SAP cluster nodes connected to one another by the {{site.data.keyword.Bluemix_notm}} network. These nodes are Virtual Server Instances (VSIs) running within a Virtual Private Cloud (VPC).
 
- * {{site.data.keyword.IBM_notm}} VPC File Storage attached to each of the VSIs that run the SAP components. This shared file system is mounted by using the Network File System (NFS) protocol to facilitate sharing of data between the SAP components.
+* {{site.data.keyword.IBM_notm}} VPC File Storage attached to each of the VSIs that run the SAP components. This shared file system is mounted by using the Network File System (NFS) protocol to facilitate sharing of data between the SAP components.
 
     The two SAP servers communicate by using an Enqueue Server. The Enqueue Server on the primary nodes transmits replication data to the Enqueue Replication Server on the standby system. This stores the data in a shadow enqueue table residing in shared memory. In case the primary Enqueue Server fails, the shadow enqueue table on the Enqueue Replication Server is used to rebuild the tables and data structures for the recovered Enqueue Server that is started on the same node. The Enqueue Replication Server stops after transferring the data to the recovered Enqueue Server.
 

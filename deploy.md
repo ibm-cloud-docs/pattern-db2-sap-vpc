@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-06-11"
+lastupdated: "2025-11-18"
 
 keywords:
 
@@ -15,7 +15,7 @@ subcollection: pattern-db2-sap-vpc
 # Deploying highly available SAP with Db2
 {: #deploy-db2-sap}
 
-The highly available SAP with Db2 on {{site.data.keyword.Bluemix_notm}} VPC solution requires manual configuration of various non-{{site.data.keyword.cloud_notm}} software components. This deployment process requires various specific deployment and configuration steps as described:
+The highly available SAP with Db2 on {{site.data.keyword.Bluemix_notm}} VPC solution requires manual configuration of various non-{{site.data.keyword.cloud_notm}} software components. This deployment process requires various specific deployment and configuration steps as described below:
 
 1. Deploy {{site.data.keyword.cloud_notm}} infrastructure resources
 1. Install the required software
@@ -118,7 +118,7 @@ SAP uses the Pacemaker software that is provided by the Linux distribution that 
 
 The following links describe the installation of the {{site.data.keyword.IBM_notm}} Db2 Pacemaker software:
 
-* [Installing the Pacemaker cluster software stack](https://www.ibm.com/docs/en/db2/12.1.0?topic=manager-installing-pacemaker-cluster){: external}
+* [Installing the Pacemaker cluster software stack](https://www.ibm.com/docs/en/db2/12.1.x?topic=manager-installing-pacemaker-cluster){: external}
 * [Installing Pacemaker with {{site.data.keyword.IBM_notm}} Db2 SAP Help Portal](https://help.sap.com/docs/DB6/e3eefec5d20740f4872652a475457348/f725ea789c4043e5bee3d0fafd07bc9e.html){: external}
 
 
@@ -137,7 +137,7 @@ A Virtual IP address (VIP) is used for communication between the Db2 database an
 
 {{site.data.keyword.cloud_notm}} application load balancers use front end listeners, security groups, backend pools, and health checks to route the traffic. For more information, see [About application load balancers](/docs/vpc?topic=vpc-load-balancers-about).
 
-For more information on the steps to configure this Virtual IP address, see [Setting up Virtual IP address for two-node Db2 HADR Pacemaker cluster with application load balancer on {{site.data.keyword.cloud_notm}}](https://www.ibm.com/support/pages/node/7184308){:external}.
+For more information on the steps to configure this Virtual IP address, see [Setting up Virtual IP address for two-node Db2 HADR Pacemaker cluster with application load balancer on {{site.data.keyword.cloud_notm}}](https://www.ibm.com/support/pages/node/7184308){: external}.
 
 ### Pacemaker fencing agent setup
 {: #deploy-db2-fence}

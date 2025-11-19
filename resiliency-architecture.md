@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-04-23"
+lastupdated: "2025-11-18"
 
 subcollection: pattern-db2-sap-vpc
 
@@ -13,7 +13,7 @@ keywords:
 # Architecture decisions for resiliency
 {: #resiliency-architecture}
 
-The following sections summarize the resiliency architecture decisions for resiliency for the SAP on VPC pattern.
+The following sections summarize the resiliency architecture decisions for the SAP on VPC pattern.
 
 ## Architecture decisions for high availability
 {: #ha-arch}
