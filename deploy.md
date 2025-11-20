@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-11-18"
+lastupdated: "2025-11-20"
 
 keywords:
 
@@ -15,7 +15,7 @@ subcollection: pattern-db2-sap-vpc
 # Deploying highly available SAP with Db2
 {: #deploy-db2-sap}
 
-The highly available SAP with Db2 on {{site.data.keyword.Bluemix_notm}} VPC solution requires manual configuration of various non-{{site.data.keyword.cloud_notm}} software components. This deployment process requires various specific deployment and configuration steps as described below:
+The highly available SAP with Db2 on {{site.data.keyword.Bluemix_notm}} VPC solution requires manual configuration of various non-{{site.data.keyword.cloud_notm}} software components. This deployment process requires various specific deployment and configuration steps as described in the following list:
 
 1. Deploy {{site.data.keyword.cloud_notm}} infrastructure resources
 1. Install the required software
