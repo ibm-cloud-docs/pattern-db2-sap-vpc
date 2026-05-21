@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-11-18"
+lastupdated: "2026-05-21"
 
 subcollection: pattern-db2-sap-vpc 
 
@@ -26,7 +26,7 @@ This document is intended to:
 ## Pattern details 
 {: #db2-pattern-details}
 
-This document is not intended to replace or supersede any documentation for either Db2 or SAP. Rather, this document brings these diverse documentation resources together to deliver a highly available solution.
+This document is not intended to replace or supersede any documentation for either Db2 or SAP. Rather, this document brings these diverse documentation resources together to describe how to deploy a highly available solution.
 
 Following the Architecture Framework, the highly available SAP with Db2 on {{site.data.keyword.vpc_short}} pattern covers design considerations and architecture decisions for the following aspects and domains:
 

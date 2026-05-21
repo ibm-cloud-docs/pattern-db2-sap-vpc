@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-11-20"
+lastupdated: "2026-05-21"
 
 keywords:
 
@@ -31,7 +31,7 @@ You need an {{site.data.keyword.Bluemix}} SSH key and a Virtual Private Cloud (V
 ### Securing access to your environment
 {: #deploy-before-start-secure}
 
-Security is a significant concern when running business-critical applications in a cloud environment. To secure your connection to your {{site.data.keyword.IBM_notm}} Virtual Servers, a public SSH key can be uploaded to your account, per region. These public keys are deployed to your virtual servers instances to allow access to the servers.
+Security is a significant concern when running business-critical applications in a cloud environment. To secure your connection to your {{site.data.keyword.IBM_notm}} Virtual Servers, a public SSH key can be uploaded to your account, per region. These public keys are deployed to your virtual servers instances to allow access to these servers.
 
 Before you continue, create an SSH public key that you can upload later to the region of your choice when you are creating the virtual server instance. For more information, see [Getting started with SSH keys](/docs/vpc?topic=vpc-ssh-keys).
 
