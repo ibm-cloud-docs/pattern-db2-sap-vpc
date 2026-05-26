@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-11-18"
+lastupdated: "2026-05-21"
 
 subcollection: pattern-db2-sap-vpc
 
@@ -33,7 +33,7 @@ The following table summarizes the networking architectural decisions for SAP us
 ## Resilient communication between enterprise networks and {{site.data.keyword.cloud_notm}} servers
 {: #resilient-comms-to-cloud}
 
-Most organizations connect their {{site.data.keyword.cloud_notm}}-based SAP/Db2 environment to on-premises systems and applications. A single network link between the cloud and the enterprise networks is a potential point of failure that needs protection too.
+Most organizations connect their {{site.data.keyword.cloud_notm}}-based SAP/Db2 environment to on-premises systems and applications. A single network link between the cloud and the enterprise networks is a potential point of failure that needs protection too. Best practice is to deploy multiple links between enterprise networks and {{site.data.keyword.cloud_notm}} servers.
 
 The following diagram shows a highly available network connection between the enterprise and {{site.data.keyword.cloud_notm}}:
 

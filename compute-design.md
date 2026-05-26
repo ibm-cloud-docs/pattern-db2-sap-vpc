@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-11-18"
+lastupdated: "2026-05-21"
 
 subcollection: pattern-db2-sap-vpc
 
@@ -15,11 +15,11 @@ keywords: Intel, virtual machine, VSI, server, host, compute
 # Compute design
 {: #compute-design}
 
-The basis of any cloud solution are the compute resources that run the applications and any supporting services that the application requires. This topic introduces the considerations for the compute resources needed to support the {{site.data.keyword.IBM_notm}} Db2 database layer of the overall solution as well as the compute resources needed to support the SAP application layer.
+The basis of any cloud solution are the compute resources that run the applications and any supporting services that the application requires. This topic introduces the considerations for the compute resources needed to support the {{site.data.keyword.IBM_notm}} Db2 database layer of the overall solution in addition to those compute resources needed to support the SAP application layer.
 
 This pattern is built within an {{site.data.keyword.Bluemix_notm}} Virtual Private Cloud (VPC) environment. For more information, see [{{site.data.keyword.Bluemix_notm}} Virtual Private Cloud (VPC) infrastructure environment](/docs/sap?topic=sap-vpc-env-introduction).
 
-The pattern requires a pair of servers to support the Db2 high availability disaster recovery (HADR) primary and standby database and a separate pair of servers to support the SAP components. The SAP component options are Virtual Server Instances (VSIs) or Bare Metal servers. For more information, see:
+The pattern requires one pair of servers to support the Db2 high availability disaster recovery (HADR) primary and standby database and a second pair of servers to support the SAP components. The SAP component options can be Virtual Server Instances (VSIs) or Bare Metal servers. For more information, see:
 
 * Virtual Server Instances (VSIs)
 
@@ -33,7 +33,7 @@ The pattern requires a pair of servers to support the Db2 high availability disa
 
     * [{{site.data.keyword.Bluemix_notm}} Intel Bare Metal Servers on VPC Infrastructure](/docs/sap?topic=sap-fast-path-site-map-intel-bm-vpc).
 
-The database servers that run {{site.data.keyword.IBM_notm}} Db2 must be sized to support the workload requirements. For more information, see [System requirements for {{site.data.keyword.IBM_notm}} Db2 for Linux, UNIX, and Windows](https://www.ibm.com/support/pages/system-requirements-ibm-db2-linux-unix-and-windows){: external}.
+The database servers that run {{site.data.keyword.IBM_notm}} Db2 are sized with the necessary compute and memory resources to support the workload requirements. For more information, see [System requirements for {{site.data.keyword.IBM_notm}} Db2 for Linux, UNIX, and Windows](https://www.ibm.com/support/pages/system-requirements-ibm-db2-linux-unix-and-windows){: external}.
 
 Only certain server profiles, both VSIs and Bare Metal servers, are supported for running SAP. For more information, see [Infrastructure certified for SAP](/docs/sap?topic=sap-iaas-offerings).
 {: note}

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-11-18"
+lastupdated: "2026-05-22"
 
 subcollection: pattern-db2-sap-vpc 
 
@@ -12,7 +12,7 @@ keywords:
 # Overview
 {: #overview}
 
-The objective of this pattern is to provide an {{site.data.keyword.IBM_notm}} solution design and deployment guide for highly available SAP with Db2 on {{site.data.keyword.vpc_full}} using SUSE Linux Enterprise server or Red Hat Enterprise Linux. This solution uses Pacemaker, an open source high-availability cluster resource manager to deliver high availability to the Db2 database. 
+The objective of this pattern is to provide an {{site.data.keyword.IBM_notm}} solution design and deployment guide for highly available SAP with Db2 on {{site.data.keyword.vpc_full}} using SUSE Linux Enterprise server or Red Hat Enterprise Linux. This solution uses Pacemaker, an open source high-availability cluster resource manager to deliver high availability to both the Db2 database and the SAP application components. 
 
 ## Pattern objectives
 {: #db2-sap-objectives}
@@ -26,7 +26,7 @@ This document is intended to:
 ## Pattern details 
 {: #db2-pattern-details}
 
-This document is not intended to replace or supersede any documentation for either Db2 or SAP. Rather, this document brings these diverse documentation resources together to deliver a highly available solution.
+This document is not intended to replace or supersede any documentation for either Db2 or SAP. Rather, this document brings these diverse documentation resources together to describe how to deploy a highly available solution.
 
 Following the Architecture Framework, the highly available SAP with Db2 on {{site.data.keyword.vpc_short}} pattern covers design considerations and architecture decisions for the following aspects and domains:
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-11-18"
+lastupdated: "2026-05-21"
 
 keywords: SAP, Db2, Pacemaker, SUSE, SLES, SUSE Linux, High Availability, cluster
 
@@ -35,7 +35,7 @@ production: false
 {: toc-compliance="ISOIEC27001"}
 {: toc-version="1.0"}
 
-Many organizations run SAP applications using an {{site.data.keyword.Bluemix_notm}} Db2 database to support the SAP instance. This pattern describes a highly available implementation of both SAP and Db2 to deliver a resilient solution to meet an organization's business needs.
+Many organizations run SAP applications using an {{site.data.keyword.Bluemix_notm}} Db2 database to underpin the SAP instance. This pattern describes a highly available implementation of both SAP and Db2 to deliver a resilient solution to meet an organization's business needs.
 
 SAP systems are often mission-critical for the organizations that use them. Providing a highly available SAP Application Server offers minimal benefit unless the underlying database - {{site.data.keyword.IBM_notm}} Db2 in this case - is also made highly available. The architecture for this pattern provides a highly available database layer, which underpins a highly available SAP application server layer running within {{site.data.keyword.Bluemix}} Virtual Private Cloud.
 
